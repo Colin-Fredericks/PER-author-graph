@@ -1,0 +1,2931 @@
+*network
+*vertices 953
+469 "Yifei Sun"
+2 "Kelly Lancaster"
+3 "Tom J. Edwards"
+4 "Robert J. Whitaker"
+5 "Robert G. Fuller"
+6 "Dyan L. McBride"
+7 "E. Martin"
+8 "Kerriann Alvarado"
+328 "Gary Gladding"
+10 "Michael Zeilik"
+11 "Kristan Corwin"
+12 "Stephen R. Stonebraker"
+13 "Idaykis Rodriguez"
+14 "Timothy Stelzer"
+15 "Robert Beichner"
+16 "Paul van Kampen"
+700 "Simon P. Bates"
+17 "Guo-Li Chiou"
+18 "Amnon Hazan"
+19 "Colin Thomson"
+20 "P. C. Peters"
+22 "Timothy Nokes"
+630 "Ronald K Thornton"
+24 "Melissa Dancy"
+25 "Jack Lochhead"
+26 "Tevian Dray"
+27 "Manjula Devi Sharma"
+145 "Timothy F. Slater"
+29 "Eoin O'Leary"
+30 "Marian Tzolov"
+31 "David Wells"
+220 "Thomas Wemyss"
+475 "Mirko Marusic"
+807 "Randall D. Knight"
+33 "O. Roger Anderson"
+34 "Donald Boys"
+35 "Lester C. Loschky"
+36 "Chandra Turpen"
+333 "Jennifer Rodoff"
+38 "Maria Ruibal Villasenor"
+39 "Andrew E. Pawl"
+40 "Eric Potter"
+41 "P. Dail"
+250 "C. A. Ogilvie"
+43 "Bradley S. Ambrose"
+44 "J. Christopher Moore"
+45 "Donna Messina"
+738 "John Almarode"
+48 "Sam B. McKagan"
+49 "Donald Woodhouse"
+50 "Joseph Llama"
+51 "Evan A. Chase"
+52 "Walter Benenson"
+552 "Brian R. Belland"
+824 "Saif Rayyan"
+54 "Jeffrey T. Morgan"
+55 "David Jonassen"
+551 "Natalia Korolkova"
+636 "Richard Catrambone"
+58 "Mila R. Kryjevskaia"
+336 "Emma Kahle"
+60 "Vanes Mesic"
+21 "Wayne M. Schlingman"
+62 "Stephen D. Baker"
+63 "S. Toernkvist"
+64 "B. N. Meera"
+65 "Jing Han"
+481 "R. B. Hicks"
+67 "Mikael Winberg"
+68 "Sangho Song"
+69 "Chris Stewart"
+70 "Mindi Kvaal Anderson"
+72 "Mayo Miller"
+73 "Mark L. McKinnon"
+74 "Archie Paulson"
+75 "Edward Grillo"
+76 "Anna Karelina"
+77 "Lauren Barth-Cohen"
+78 "Katherine Garrett"
+79 "Kay Schulze"
+340 "Salomon F. Itza-Ortiz"
+81 "Neville W. Reay"
+405 "Sharon Bendall"
+83 "Benedetto Di Paola"
+84 "Janet J. Rivera"
+85 "Heidi Fencl"
+86 "Kendra Rand"
+88 "Andy Johnson"
+89 "Stacey Davis"
+91 "Joseph Beuckman"
+92 "David E. Meltzer"
+563 "Jyh-Chong Liang"
+93 "Jeffrey J. Steinert"
+94 "Kimberly Shaw"
+95 "Gina Brissenden"
+642 "David J. Palazzo"
+97 "Ian D. Beatty"
+98 "Keith Oliver"
+99 "Joshua Jacob"
+100 "Dan Hingley"
+101 "Ying W. Chen"
+602 "R. W. Robinett"
+174 "Elizabeth Gire"
+104 "Edwin F. Greco"
+105 "Suvendra Dutta"
+913 "Larry Medsker"
+106 "Mengesha Ayene"
+107 "Kathleen A. Harper"
+108 "Kerry Browne"
+109 "A. Lynn Stephens"
+110 "Edward F. Redish"
+111 "Karon L. McBride"
+113 "Gintaras Duda"
+114 "Sanjoy Mahajan"
+115 "Andrzej Kotlicki"
+116 "Robert R. Marchini"
+117 "Jing Li"
+118 "Brian H. Ross"
+119 "Zdeslav Hrepic"
+120 "Wheijen Chang"
+121 "Thomas M. Foster"
+122 "Lanee Young"
+123 "Rebecca F. Rosenblatt"
+124 "Keith Sheppard"
+648 "R. M. Hume"
+127 "Young-Jin Lee"
+128 "Allan M. Bloom"
+129 "Spartak Kalita"
+511 "Fred Goldberg"
+130 "J. Gastineau"
+131 "Michael Klymkowsky"
+132 "Narumon Emarat"
+133 "Mary Urquhart"
+134 "Tara O'Brien Pride"
+135 "Pasi Nieminen"
+136 "David Hestenes"
+137 "Judith D. Aubrecht"
+900 "Pamela J. Rosborough"
+138 "H. Vincent Kuo"
+815 "Orad Reshef"
+140 "David J. Van Domelen"
+141 "Ruth Rodriguez"
+143 "Cody Sandifer"
+144 "Sangwoo Ha"
+146 "Joshua Bilak"
+833 "Mark F. Masters"
+147 "Scott Bonham"
+148 "Laura McCullough"
+149 "Rabindra R. Bajracharya"
+150 "George W. Parker"
+351 "Gerald F. Wheeler"
+152 "Jon D. H. Gaffney"
+153 "Adam Feil"
+154 "Charles Henderson"
+155 "Jeffry V. Mallow"
+156 "Andrew Elby"
+157 "Brian M. Stephanik"
+158 "Stacy H. Godshall"
+159 "Frank Kowalski"
+160 "Carl E. Wieman"
+161 "Stephanie Dymek"
+162 "Benjamin W. Dreyfus"
+163 "Lezlie S. DeWater"
+164 "Marjan Zadnik"
+165 "Paula R.L. Heron"
+823 "Danielle Keeble"
+166 "Dewey Dykstra"
+167 "K. K. Perkins"
+168 "Kereen Monteyne"
+169 "Roger S. Jones"
+170 "Pamela Kraus"
+171 "Jacob Blickenstaff"
+656 "K. Heller"
+173 "Patrick Cooney"
+103 "Adriana Undreiu"
+175 "Moshe Krakowski"
+176 "Sissi Li"
+177 "Alexander L. Rudolph"
+178 "Robert J. Culbertson"
+179 "Robert J. Dufresne"
+462 "F. Marton"
+181 "Jinseog Yi"
+182 "Arvind Kumar"
+185 "Richard Freuler"
+186 "Lisa Novemsky"
+187 "Anthony J. Bendinelli"
+188 "Elaine Cohen"
+189 "Kwan Arayathanitkul"
+190 "Gerhard Sonnert"
+192 "Paul Beale"
+335 "Nathan O. Folland"
+194 "Hilary A. Dwyer"
+831 "Betty Adams"
+195 "Hideo Nitta"
+196 "Monica G. Ferguson-Hessler"
+355 "Jennifer Taylor"
+198 "Rosemary S. Russ"
+199 "Alan Van Heuvelen"
+200 "Emily Ashbaugh"
+201 "Brian A. Pyper"
+125 "Jennifer Docktor"
+204 "Heidi V. Mauk"
+205 "Adrian Carmichael"
+206 "William Gerace"
+207 "Eric Gustafson"
+208 "John W. Jewett"
+265 "Jongho Shin"
+271 "Stanley Morris"
+841 "Yaron Lehavi"
+277 "Patrick J. Enderle"
+212 "Shulamit Kapon"
+213 "Gordon Baugh"
+298 "Sherry A. Southerland"
+215 "Shelley Yeo"
+216 "K. Kelvin Cheng"
+217 "Natalie Strand"
+218 "Shelley Rohar"
+219 "Dennis Kuhl"
+809 "Jennifer A. Roth"
+341 "Catherine H. Crouch"
+221 "Kristi Hall"
+223 "Vasilis Pagonis"
+224 "Melissa S. Taylor"
+666 "Adiel Fernandez"
+226 "Richard R. Hake"
+227 "Peter S. Shaffer"
+228 "Samuel Bowen"
+229 "Wolfgang Bauer"
+230 "Ronald Keith"
+231 "Elizabeth Stine-Morrow"
+361 "Michael Kelly"
+319 "Jing Wang"
+234 "Steven F. Wolf"
+235 "Alex Maries"
+237 "Cassandra A. Paul"
+834 "Doug Bonn"
+239 "Jill A. Marshall"
+489 "Omer Acar"
+241 "Stephen J. Robinson"
+242 "Christopher M. Sorensen"
+243 "Sadhana Puntambekar"
+203 "Amy Rouinfar"
+244 "Janet Tate"
+246 "Priscilla Pamela"
+247 "Dov Liberman"
+248 "M. Dubson"
+249 "Karsten Jessen"
+313 "Kelvin Trefz"
+42 "Raluca E. Teodorescu"
+251 "G. Dall'Alba"
+252 "Julie A. Bianchini"
+253 "Tianfang Cai"
+254 "Danielle Boyd-Harlow"
+255 "Christine Denison"
+256 "Zahra Hazari"
+257 "May Lee"
+546 "David J. Ernst"
+259 "Indrajith Senevirathne"
+260 "James P. Olsen"
+261 "R. LeMaster"
+262 "Louis J. Rubbo"
+263 "David T. Brookes"
+719 "Candace Schau"
+264 "Adam Moyer"
+575 "J. W. Halley"
+266 "Ayush Gupta"
+267 "Apriel Hodari"
+268 "Emily H. van Zee"
+269 "J. E. Chavez-Pierce"
+270 "James S. Terwilliger"
+184 "P. Ramsden"
+947 "Paul Ashcraft"
+829 "Ying-Tien Wu"
+272 "C. J. Keller"
+273 "Beth Simon"
+274 "M. Gilbert"
+275 "Jonathan E. Abbott"
+276 "Diane J. Grayson"
+211 "Karen A. Marrongelle"
+278 "Fu-Kwun Hwang"
+279 "Sheila Tobias"
+280 "E. W. Thomas"
+281 "Frances Mateycik"
+282 "Germaine Taggart"
+283 "Chris Whittaker"
+887 "Mark D. Somers"
+285 "Robert G. Howard"
+287 "David Hammer"
+288 "Graham Oberem"
+289 "E. Cataloglu"
+290 "Michael Christel"
+291 "Colleen Megowan-Romanowicz"
+292 "Nacira Tache"
+293 "Brian W. Frank"
+294 "Edwin Kashy"
+520 "Mitchell Nathan"
+367 "Rachel Gheen"
+297 "Michael Scott"
+299 "Jonathan Tumaniro"
+300 "Nathan Harshman"
+301 "Gary White"
+302 "Elizabeth Peak"
+679 "Atanu Bandyopadhyay"
+304 "Charles B. Mamolo"
+305 "Xueli Zou"
+306 "Alysia D. Marino"
+307 "A. S. Rosenthal"
+308 "Marcos D. Caballero"
+309 "John Cockman"
+310 "Adrienne Traxler"
+284 "Gregg Swackhamer"
+314 "Jason E. Dowd"
+649 "Olivia Levrini"
+316 "Julian Taylor"
+317 "Sufen Wen-Yu Chen"
+318 "Vashti Michelle Sawtelle"
+412 "P. R. Fletcher"
+320 "E. Yerushalmi"
+321 "Matthew A. Kohlmyer"
+322 "Frederick Reif"
+362 "Jim Minstrell"
+325 "Andrew G. Bennett"
+326 "Jun-ichiro Yasuda"
+327 "Pengfei Li"
+9 "S. Reid"
+329 "Eric A. Hagedorn"
+330 "R. Cohen"
+331 "Alastair D. Gillies"
+428 "Zhongzhou Chen"
+844 "Christian H. Kautz"
+37 "Mary A. Moriarty"
+334 "Dennis Kane"
+949 "Jeffrey M. Hawkins"
+59 "Claudio Fazio"
+337 "William Leonard"
+338 "Bijaya Aryal"
+339 "Sebastien Cormier"
+80 "Shabnam Siddiqui"
+87 "Frances J. Poodry"
+342 "Gordon J. Aubrecht"
+343 "Lana Ivanjek"
+894 "Anna Sfard"
+345 "Benjamin T. Spike"
+346 "Richard F. Gunstone"
+347 "Geoffrey L. Cohen"
+349 "Jason Cervenec"
+350 "Joss Ives"
+151 "Corinne A. Manogue"
+352 "Edgar D. Corpuz"
+353 "MacKenzie R. Stetzer"
+354 "Keith R. Bujak"
+197 "Keron Subero"
+356 "Vincent P. Coletta"
+357 "Kathryn Scantlebury"
+358 "Leslie J. Atkins"
+637 "Stamatis Vokos"
+697 "Robert H. Tai"
+359 "David C. Webb"
+360 "Roger E. Feeley"
+849 "Zacharias Zacharia"
+691 "Mark L. Rosenquist"
+365 "Nathaniel Lasry"
+775 "Suzanne White-Brahmia"
+366 "Albert Lee"
+61 "Marina Milner-Bolotin"
+368 "Jesus Vazquez-Abad"
+851 "Madelen Bodin"
+370 "Kim Coble"
+692 "Vazgen Shekoyan"
+372 "Scott M. Stevens"
+534 "Doris J. Wagner"
+374 "Janet E. Coffey"
+375 "Jessica Bartley"
+377 "Sarai N. Costley"
+380 "Timothy French"
+381 "C. Massen"
+914 "Rasil Warnakulasooriya"
+382 "Cedric Linder"
+383 "Eric Dey"
+384 "Ping Zhang"
+536 "Elizabeth George"
+386 "Chia-Yu Wang"
+387 "Gordon Robertson"
+855 "Karen Scheel"
+389 "S. J. Pollock"
+390 "Pablo Barniol"
+391 "Rebecca Lippmann Kung"
+392 "K.-A. Pettersson"
+393 "Philip Dukes"
+394 "Hartmut Wiesner"
+395 "Masa-aki Taniguchi"
+396 "Ruxandra M. Serbanescu"
+794 "Scott V. Franklin"
+398 "Elizabeth Charles"
+399 "Gyoungho Lee"
+400 "Lei Bao"
+401 "Shawn Ballard"
+487 "Christopher M. Nakamura"
+698 "Ton de Jong"
+403 "Beth Hufnagel"
+907 "Apisit Devi Tongchai"
+404 "Elaine Seymour"
+406 "John E. Donovan"
+407 "Rebecca S. Lindell"
+408 "L. A. Collins"
+410 "H. T. Hudson"
+411 "Priscilla W. Laws"
+245 "W. T. Griffith"
+90 "Maria Ruiz-Primo"
+415 "Bashirah Ibrahim"
+126 "Lijia Yang"
+417 "V. A. Nivalainen"
+418 "Michael E. Loverude"
+419 "Denise Plunk"
+420 "Thomas Withee"
+421 "Kara E. Gray"
+202 "S. Rainson"
+423 "Brian Bowe"
+424 "Andrew R. Gray"
+348 "George DeBeck"
+426 "Robert J. Endorf"
+427 "David P. Smith"
+860 "Michael F. Schatz"
+409 "Daniel Schumayer"
+429 "Trevor S. Volkwyn"
+430 "Philip M. Sadler"
+431 "John J. Clement"
+432 "Zachary D. Hite"
+433 "Analia Barrantes"
+434 "H. C. Bryant"
+323 "Austin Calder"
+436 "Sarah P. Formica"
+437 "Gerald W. McLaughlin"
+545 "Timothy J. McIntyre"
+439 "Ben Van Dusen"
+440 "R. A. Avner"
+441 "Eric R. Murray"
+442 "Dean Zollman"
+443 "Caroline N. Cardamone"
+444 "Shannon Hall"
+445 "Shelly N. Belleau"
+447 "Josip SliA!ko"
+448 "Geraldine L. Cochran"
+449 "Rebecca Kruse"
+450 "Bruce Sherwood"
+451 "Michael Gentile"
+452 "Matthew J. Moelter"
+881 "Josh Gross"
+453 "Lili Cui"
+454 "Andy Rundquist"
+455 "James Laverty"
+456 "James Ross"
+457 "Ana Susac"
+214 "Helena Dedic"
+459 "Azin Adjoudani"
+460 "Laura N. Walsh"
+461 "Patricia Heller"
+868 "David Treagust"
+845 "Margaret Wegener"
+465 "Lisa A. Scott"
+466 "Shabbir Mian"
+870 "Brant Hinrichs"
+549 "Jenaro Guisasola"
+1 "Jiyeon Park"
+470 "Kenneth W. Wood"
+471 "Donatella Cassettari"
+473 "Michael J. Ross"
+474 "Wendell H. Potter"
+32 "Roger Fearick"
+477 "Angeles Dominguez"
+478 "Robert Talbot"
+479 "Maja Planinic"
+480 "Seth Rosenberg"
+917 "Anna De Ambrosis"
+66 "Bruce D. Sinclair"
+482 "Robert Loss"
+483 "Michael M. Hull"
+484 "Laura Lising"
+485 "Beth Ann Thacker"
+486 "Ali Eryilmaz"
+488 "Lincoln D. Carr"
+539 "Stephanie V. Chasteen"
+490 "E. Robens"
+491 "Lucian Undreiu"
+492 "Anna Petrov"
+493 "Robin Marion"
+495 "Christopher Cottin"
+496 "Donald F. Holcomb"
+497 "R. Sam Larson"
+498 "Erica Watkins"
+500 "Luanna G. Ortiz"
+501 "John Demel"
+502 "Ari Eisner"
+503 "Sapna K. Sharma"
+504 "Andy Buffler"
+505 "Barbara Jones"
+506 "Brian W. Adrian"
+507 "Jessica E. Watkins"
+240 "Donald B. Mountcastle"
+713 "Irene Y. Salter"
+510 "Anura Goonewardene"
+71 "David S. Abbott"
+512 "Michael Lautman"
+513 "Elsa-Sofia Morote"
+515 "Silvia Wen-Yu Lee"
+516 "Fred Lubben"
+517 "Julia Moeller"
+878 "Chandralekha Singh"
+463 "Michael Plomer"
+295 "Adam P. Fagen"
+521 "Geoff Potvin"
+522 "Taha Mzoughi"
+523 "Jeffrey Marx"
+525 "Mary C. Wintersgill"
+526 "Ruth Chabay"
+527 "Elwin R. Savelsbergh"
+379 "Victor R. Lee"
+529 "Emily A. West"
+555 "Kathy Garvin-Doxas"
+531 "J. Barbera"
+532 "Lillian C. McDermott"
+533 "Jukka Korkea-aho"
+373 "J. Poulis"
+376 "R. A. Lewis"
+385 "Marcia C. Linn"
+537 "Eleanor C. Sayre"
+538 "Tetyana Antimirova"
+402 "Mojgan Matloob Haghanikar"
+540 "Charles Baily"
+541 "N. H. Magee"
+542 "Eugene Torigoe"
+543 "Katherine A. Slaughter"
+183 "R. H. Pearson"
+438 "Lauren Swanson"
+725 "Jing-Wen Lin"
+547 "Andrew Mason"
+548 "Jonte Bernhard"
+468 "Paula V. Engelhardt"
+550 "Cat Gubernatis"
+209 "Mel Sabella"
+142 "Samson Sherman"
+524 "G. Masters"
+554 "L. L. Alfaro-Avena"
+530 "Jose M. Almudi"
+556 "Walter Bisard"
+557 "Gerd Kortemeyer"
+934 "Esther Bagno"
+558 "Sybillyn Jennings"
+559 "Andrea Beach"
+560 "Nancy Mattern"
+561 "Rhett J. Allain"
+562 "Karen Cummings"
+435 "Aaron R. Warren"
+564 "Mark P. Haugan"
+565 "Uri Ganiel"
+566 "Ross K. Galloway"
+567 "Francisco L. Naranjo"
+568 "Thomas J. Bing"
+569 "Laura J. Moin"
+233 "Ngoc-Loan Nguyen"
+570 "Jeanne Kriek"
+571 "Barbara Edwards"
+572 "David May"
+574 "R.E. Yeend"
+576 "Cindy E. Hmelo-Silver"
+577 "Dale D. Long"
+578 "Stephen E. Kanim"
+579 "Mark W. Aulls"
+580 "Eugenia Etkina"
+514 "Michael Low"
+582 "Helen Johnston"
+413 "Andrew Boudreaux"
+584 "Mohammad Samiullah"
+585 "Rainer Mueller"
+586 "J. Bowden"
+588 "Antje Kohnle"
+589 "Shannon D. Willoughby"
+590 "Nadia Perez-Goytia"
+591 "M. R. Semak"
+592 "Benjamin Zwickl"
+593 "Renee Michelle Goertzen"
+594 "Steven Rosenfield"
+595 "Katrina E. Black"
+414 "Laird H. Kramer"
+598 "K. Gibbons"
+599 "Nancy Talbott"
+600 "Charles Pearl"
+892 "David Jones"
+601 "George O'Brien"
+446 "Adam D. Smith"
+603 "Mark Hollabaugh"
+604 "Carina M. Rebello"
+625 "Hisham Alhadlaq"
+606 "Lin Ding"
+607 "Warren M. Christensen"
+608 "E. Walsh"
+609 "Anna Hafele"
+610 "Jessica A. Bolker"
+611 "Kenneth Tobin"
+612 "David J. Roundy"
+712 "Andrew Hopkins"
+614 "Barbara M. Hoeling"
+615 "Ramon S. Barthelemy"
+464 "Kevin Varvell"
+617 "Joshua Sanjay Von Korff"
+618 "Pedro J. Pardo"
+619 "Mark C. Spraker"
+620 "Leanne Wells"
+621 "Jessica L. Easley"
+622 "Tara Bartiromo"
+623 "A. Thomas"
+624 "Romona Valenzuela"
+82 "Matthew J. Cochran"
+626 "Janet L. Kolodner"
+519 "David Maloney"
+897 "Ronald Gautreau"
+786 "Susan Kowalski"
+629 "Kendra M. Bober"
+23 "Sam Cohen"
+28 "Asko Maskynen"
+344 "Saleh Alabdulkareem"
+633 "W. Handley"
+634 "Lorenzo G. Rimoldini"
+734 "Todd Ruskell"
+56 "Ernst Breitenberger"
+631 "Chin-Chung Tsai"
+785 "Gregory A. Braun"
+638 "Jane Jackson"
+639 "Jerry O'Connor"
+640 "Catherine M. Ishikawa"
+641 "N. Sanjay Rebello"
+96 "Yuhfen Lin"
+643 "J. Paul Callan"
+644 "J. Luna-Gonzalez"
+112 "Sharon E. Osborn Popp"
+222 "Adrian Madsen"
+647 "Thomas M. Scaife"
+286 "Steve Goldhaber"
+422 "Chance Hoellwarth"
+650 "Scott Anderson"
+651 "Eric Kuo"
+653 "Timothy L. McCaskey"
+654 "Christopher A. Hooley"
+655 "Hsin-Kai Wu"
+172 "Jonathon A. Grooms"
+657 "Hunter G. Close"
+658 "M. D. Gonzalez-Quezada"
+659 "Daniel T. Seaton"
+660 "Darryl Ozimek"
+661 "Balasubrahmanya N. Hegde"
+905 "P. E. Hirvonen"
+663 "Laurel Mayhew"
+664 "M. L. Horner"
+665 "Timothy T. Grove"
+425 "Homeyra R. Sadaghiani"
+225 "Monwhea Jeng"
+667 "Antti Savinainen"
+669 "Stephanie Lockwood"
+670 "Eric Malina"
+671 "Wendy K. Adams"
+258 "C. Malley"
+673 "Thomas C. Thaden-Koch"
+727 "Megan L. Grunert"
+674 "Kandiah Manivannan"
+675 "Keivan G. Stassun"
+676 "James Day"
+677 "Constantinos P. Constantinou"
+678 "Michael McKean"
+508 "Chernchok Soankwan"
+680 "Elisheva Cohen"
+681 "Brian Washburn"
+682 "Cristian Raduta"
+683 "Neelam Khan"
+684 "Witat Fakcharoenphol"
+685 "Bruce L. Sherin"
+686 "Joel Van Deventer"
+687 "Ives Araujo"
+688 "Ying-Shao Hsu"
+689 "Craig Savage"
+690 "Lauren E. Kost"
+364 "M. R. Benne"
+371 "Daniel L. Schwartz"
+693 "Lee Branum-Martin"
+694 "J. Risley"
+944 "Alejandro Garza"
+583 "Genaro Zavala"
+696 "Sevda Yerdelen-Damar"
+303 "Beom-Ki Kim"
+416 "David Schuster"
+699 "Vincent P. Coletta"
+668 "Sarah Garcia"
+701 "Robert Shelby"
+702 "Paul Adams"
+703 "David McIntyre"
+704 "Christopher J. Omasits"
+705 "Hasnija Muratovic"
+706 "Jean Lythcott"
+707 "Paul W. Irving"
+867 "Adam M. Larson"
+708 "Anders Weinstein"
+709 "Gary A. Morris"
+711 "Susan Sturm"
+494 "C. M. Savage"
+901 "William Mamudi"
+509 "Karen Wosilait"
+714 "H. Laue"
+715 "Tiffany A. Ito"
+716 "H. J. Lewandowski"
+535 "Stephanie A. Barr"
+553 "Rachel Moll"
+720 "Molly Johnson"
+378 "Sabine Stanley"
+722 "Rafi Safadi"
+723 "Calvin S. Kalman"
+724 "M. Gratny"
+721 "Kristin Walker"
+587 "M. Gjertsen"
+921 "Allan Harrison"
+726 "Emily Moore"
+605 "Heidi L. Iverson"
+728 "Jennifer Blue"
+729 "Janet M. Casperson"
+730 "Gene D. Sprouse"
+731 "Andrea Noack"
+732 "Nasser M. Juma"
+733 "Ariel Dahan"
+635 "Paul J. Kushner"
+735 "Michael Williamson"
+749 "Richard L. Cardenas"
+737 "Dominic McGrath"
+695 "Jouni Viiri"
+739 "Eilish McLoughlin"
+741 "Amy L. Housley Gaffney"
+742 "Patricia Allen"
+743 "David R. Sokoloff"
+744 "Matty Lau"
+718 "Callum Ferguson"
+746 "Heather Griffin"
+747 "Mathew Sandy Martinuk"
+748 "M. Marder"
+736 "P. K. Ahluwalia"
+750 "B. L. Holton"
+751 "Michael I. Posner"
+752 "Susan Ramlo"
+753 "Valerie K. Otero"
+754 "Ian Cooper"
+755 "David E. Trowbridge"
+756 "Sara E. Severance"
+757 "Suzanne M. Lea"
+758 "G. Rebmann"
+759 "George K. Horton"
+597 "Doug Hearrington"
+761 "Tram DoNgoc Hoang"
+762 "Carolann Koleci"
+763 "Thomas L. O'Kuma"
+924 "R. D. Dietz"
+765 "Claire Loptson"
+766 "Haim Eshach"
+767 "Rachel Seggev"
+581 "Lorella M. Jones"
+768 "Jrene Rahm"
+769 "Bat-Sheva Eylon"
+770 "Eleanor W. Close"
+771 "R. Di Stefano"
+717 "L. Viennot"
+772 "Angela Kelly"
+773 "Jacquelyn J. Chini"
+311 "Guadalupe L. Martinez"
+312 "Ying Luo"
+776 "Kimberley Kreutzer"
+777 "Gerald Feldman"
+778 "Rachel E. Scherr"
+779 "Jorge dela Garza"
+780 "Rochelle Gutierrez"
+781 "Jessica Clark"
+782 "Peter W. Hewson"
+783 "Joshua Von Korff"
+784 "Janelle M. Bailey"
+596 "C. W. Willis"
+929 "Curtis J. Hieggelke"
+46 "Tae-Sun Kim"
+787 "Carolina Alvarado"
+788 "David Rosengrant"
+789 "Ian D. Johnston"
+930 "Patrick B. Kohl"
+826 "Eric Brewe"
+792 "Jeffrey A. Phillips"
+793 "Katherine Menchen"
+47 "Renate C. Lippert"
+795 "Charles R. Rhyner"
+796 "Russell K. Hobbie"
+797 "Shih-Yin Lin"
+798 "Peter Kung"
+799 "Gregory Suran"
+800 "Michael Sanger"
+801 "Steve Iona"
+802 "Kai Fang"
+803 "Christian D. Schunn"
+804 "Florin Lung"
+805 "Sergio Flores"
+806 "Luke Conlin"
+102 "N. S. Podolefsky"
+808 "Maria Isabel Suero"
+315 "Angel L. Lopez"
+810 "L. Bernold"
+811 "Sam Settelmeyer"
+812 "David A. Sears"
+813 "Saalih Allie"
+652 "Robert Gordon"
+139 "Kurt VanLehn"
+816 "Jeffrey Saul"
+817 "Kathleen M. Koenig"
+818 "Kristina Zuza"
+819 "Sytil K. Murphy"
+820 "A. Stephanou"
+821 "Charles De Leone"
+822 "Maan Jiang Broadstock"
+528 "Randal Harrington"
+180 "Todd J. Cooke"
+825 "Mercedes Lorenzo"
+193 "Christine Audo"
+827 "Mary Beth Ruskai"
+828 "John R. Thompson"
+210 "Christine Lindstrom"
+830 "Jason Zeller"
+236 "Rosemary Wulf"
+832 "Jack W. Taylor"
+232 "Carol Bowman"
+238 "R. Felder"
+835 "Casey W. Sanchez"
+836 "David E. Pritchard"
+837 "Katherine P. Dabney"
+838 "Roger Nanes"
+839 "Kathy L. Malone"
+840 "Rudolph Mitchell"
+296 "Louis Deslauriers"
+842 "Andrew F. Heckler"
+843 "Sahana Murthy"
+332 "Raymond A. Hodges"
+646 "Kirsten Hogg"
+191 "Thomas A. Holme"
+846 "D. Laurillard"
+847 "Benedikt W. Harrer"
+848 "R. Padraic Springuel"
+363 "Edward E. Prather"
+850 "Ibrahim Abou Halloun"
+369 "Donald J. Treacy"
+852 "Dale R. Sweet"
+853 "Yeounsoo Kim"
+814 "Magdalena Niewiadomska-Bugaj"
+854 "Dehui Hu"
+388 "James T. Dorward"
+856 "E. Burniston"
+397 "Michael Murphy"
+858 "U. Wutchana"
+859 "Mark C. James"
+645 "Roshni Malani"
+324 "Michael Prosser"
+861 "Kevin Niall Dunbar"
+862 "Richard N. Steinberg"
+863 "Daniel P. Dougherty"
+865 "Rolando Rosalez"
+866 "Stephen G. Roberts"
+745 "Jos_ L. Zubimendi"
+544 "N. D. Finkelstein"
+57 "Teresita Marin-Suarez"
+632 "Fahad Alshaya"
+740 "Kentaro Nagamine"
+467 "Hugo Alarcon"
+871 "Malcolm Wells"
+872 "Tianren Wang"
+873 "Jose P. Mestre"
+874 "G. Transtroemer"
+876 "Karim Diff"
+877 "Akira Miyake"
+518 "Mieke De Cock"
+879 "Eunsook Kim"
+880 "Lorrie A. Shepard"
+458 "Eric Mazur"
+616 "Gay Stewart"
+882 "Evan B. Pollock"
+883 "Derek Briggs"
+884 "Aku Talikka"
+885 "Jo C. Bedard"
+886 "Arnold Burger"
+869 "Guangtian Zhu"
+774 "Igal Galili"
+888 "Hsin-Yi Chang"
+889 "Andrea A. diSessa"
+890 "Danielle Harlow"
+891 "Rebecca Jordan"
+476 "Daniel Barnett"
+893 "Dawn C. Meredith"
+613 "Kathleen W. Teague"
+895 "Lawrence T. Escalada"
+896 "Florin Bocaneala"
+628 "C. M. Slezak"
+898 "Taejin Byun"
+899 "Sharon Fargason"
+791 "Donna Webb"
+864 "Cornelius Bennhold"
+902 "Wenhui Zhao"
+903 "P. Colin"
+904 "Joseph F. Wagner"
+662 " Anonymous"
+672 "Sung-Jae Pak"
+908 "Baylie Damtie"
+909 "Michael C. Wittmann"
+910 "Dong-Hai Nguyen"
+911 "Michael Famiano"
+912 "Paul Charbonneau"
+710 "Caroline Banahan"
+472 "Steven Sommer"
+915 "Rachel E. Pepper"
+916 "Kelly Holley-Bockelmann"
+53 "Clarisa Bercovich Guelman"
+918 "Patrick L. Hession"
+919 "J. S. Aslanides"
+920 "Alicia Allbaugh"
+875 "Zeynep Isvan"
+922 "Veronica McCauley"
+923 "Trevor I. Smith"
+764 "Georgi Rangelov"
+925 "Barbara L. Gonzalez"
+926 "Jared Durden"
+927 "William Knouse"
+928 "Beth A. Lindsey"
+760 "Michael Meyer"
+790 "Luanna S. Gomez"
+931 "Benjamin Lawrence"
+932 "April Hankins"
+933 "Douglas Franke"
+499 "Dov Kaplan"
+935 "Anneke Metz"
+936 "Dedra Demaree"
+937 "Terry F. Scott"
+938 "Kelly Miller"
+939 "John Stewart"
+940 "Ronald A. Lawson"
+941 "Colin S. Wallace"
+942 "Ma. AileenA. Corpuz"
+943 "E. Grant Williams"
+573 "Ivan Guastella"
+945 "Edgardo Zamalloa"
+946 "Leon Hsu"
+857 "Mervi A. Asikainen"
+948 "Hao-Chang Lo"
+906 "Seshini Pillay"
+950 "Edward Price"
+627 "Victoria Winters"
+951 "Leonard Cerny"
+952 "M. Jackson Marr"
+953 "Brandon Bucy"
+*edges
+469 781 1
+469 537 1
+469 794 1
+469 161 1
+2 726 1
+2 167 2
+2 255 1
+2 671 1
+2 102 2
+3 471 1
+3 588 1
+3 50 1
+3 551 1
+3 331 1
+3 66 1
+3 654 1
+3 718 1
+6 819 2
+6 242 1
+6 442 6
+6 881 1
+6 641 2
+7 586 1
+7 462 1
+7 846 1
+7 608 1
+7 251 1
+7 184 1
+7 820 1
+7 524 1
+8 597 1
+8 788 1
+8 823 1
+328 263 2
+328 217 1
+328 118 1
+328 125 1
+328 297 2
+328 14 5
+328 542 3
+328 428 1
+328 873 3
+10 116 1
+10 556 1
+10 444 1
+10 613 1
+10 541 1
+10 560 2
+10 335 1
+10 408 1
+10 434 1
+10 719 2
+10 795 1
+11 732 1
+11 681 1
+11 174 1
+11 641 1
+12 936 1
+12 425 1
+12 902 1
+12 400 2
+13 601 1
+13 414 4
+13 246 1
+13 593 1
+13 826 4
+13 318 2
+14 263 2
+14 684 1
+14 297 2
+14 40 1
+14 428 1
+14 873 2
+15 24 1
+15 130 1
+15 562 1
+15 816 2
+15 606 2
+15 587 1
+15 150 1
+15 450 2
+15 561 1
+15 148 1
+15 741 1
+15 946 1
+15 626 1
+15 152 1
+15 810 1
+15 41 1
+15 71 1
+15 694 1
+15 856 1
+15 526 2
+15 468 1
+15 238 1
+16 220 1
+16 710 1
+16 739 1
+16 29 1
+16 361 1
+16 427 1
+700 566 3
+700 543 2
+700 111 1
+700 765 1
+17 888 1
+17 278 1
+17 725 1
+17 948 1
+17 655 1
+17 829 1
+17 563 1
+17 386 1
+17 317 1
+17 515 1
+17 631 1
+18 774 1
+19 522 1
+19 788 1
+22 118 1
+630 92 1
+630 562 2
+630 754 1
+630 219 2
+630 69 1
+630 712 1
+630 523 2
+630 27 1
+630 743 2
+630 789 1
+630 387 1
+630 582 1
+630 464 1
+24 721 1
+24 36 3
+24 653 1
+24 826 2
+24 154 19
+24 156 1
+24 257 1
+24 814 2
+26 151 1
+26 571 1
+26 108 1
+27 754 1
+27 69 2
+27 712 1
+27 387 1
+27 464 1
+27 324 1
+27 210 2
+27 508 1
+27 789 2
+27 189 1
+27 582 1
+27 907 1
+145 784 1
+29 739 1
+29 361 1
+29 710 1
+30 49 1
+30 259 1
+30 510 1
+31 723 1
+31 218 1
+220 949 1
+220 909 1
+220 293 1
+220 149 1
+220 828 2
+475 447 1
+807 452 1
+807 422 1
+33 849 1
+34 565 1
+34 485 1
+35 867 2
+35 174 1
+35 205 2
+35 641 2
+36 753 1
+36 801 1
+36 167 2
+36 248 2
+36 154 3
+36 272 2
+36 389 3
+36 544 7
+333 899 1
+333 287 1
+333 511 1
+38 891 1
+38 199 3
+38 580 8
+38 576 1
+38 788 3
+38 451 1
+38 843 1
+38 799 1
+38 76 7
+39 836 8
+39 443 3
+39 824 5
+39 433 7
+39 840 1
+39 42 3
+39 659 2
+39 275 2
+40 684 1
+41 856 1
+41 694 1
+41 587 1
+41 810 1
+41 130 1
+41 238 1
+250 92 1
+250 607 1
+43 227 2
+43 532 3
+43 165 1
+43 637 2
+43 862 1
+44 262 1
+45 163 1
+45 353 1
+738 256 1
+738 697 1
+738 521 1
+48 163 1
+48 633 1
+48 488 1
+48 770 5
+48 167 6
+48 248 1
+48 637 1
+48 9 1
+48 258 1
+48 657 8
+48 261 1
+48 778 8
+48 160 7
+49 259 1
+49 510 1
+50 471 1
+50 588 1
+50 551 1
+50 331 1
+50 66 1
+50 654 1
+50 718 1
+51 909 1
+52 229 1
+52 557 1
+52 294 1
+552 836 1
+552 433 1
+824 836 5
+824 443 3
+824 433 4
+824 42 3
+824 659 2
+824 275 2
+54 828 1
+54 909 4
+54 360 1
+55 281 3
+55 641 3
+55 119 1
+551 471 1
+551 588 1
+551 66 1
+551 331 1
+551 654 1
+551 718 1
+636 104 1
+636 321 3
+636 441 1
+636 860 3
+636 308 3
+636 606 2
+636 354 1
+636 526 2
+636 564 2
+636 952 3
+636 450 2
+58 353 3
+58 165 3
+336 778 1
+336 657 1
+60 705 1
+21 95 1
+21 363 1
+21 177 1
+62 709 2
+62 105 1
+62 522 2
+62 458 2
+62 300 2
+62 693 2
+62 922 1
+63 874 1
+63 392 1
+64 661 1
+65 312 1
+65 802 1
+65 126 1
+65 606 1
+65 319 1
+65 253 1
+65 400 1
+65 453 1
+481 714 1
+67 851 1
+68 1 1
+68 265 1
+68 399 1
+68 400 1
+68 853 1
+69 754 1
+69 712 1
+69 387 1
+69 324 1
+69 789 1
+69 582 1
+69 464 1
+70 909 1
+72 616 1
+72 939 1
+72 193 1
+73 474 1
+74 160 1
+74 671 1
+75 562 1
+76 891 1
+76 199 3
+76 580 9
+76 576 1
+76 788 3
+76 451 1
+76 843 1
+76 799 1
+78 113 2
+79 708 1
+79 701 1
+79 525 1
+79 139 1
+79 369 1
+340 421 2
+340 442 3
+340 119 2
+340 468 2
+340 931 1
+340 641 3
+340 920 1
+81 400 8
+81 914 2
+81 606 5
+81 327 2
+81 366 4
+81 842 1
+81 213 2
+405 511 1
+83 59 1
+83 573 1
+84 281 2
+84 558 2
+84 534 2
+85 855 1
+86 301 1
+88 609 1
+88 143 1
+89 794 1
+91 407 1
+91 794 1
+91 442 1
+91 641 1
+92 165 1
+92 233 2
+92 607 2
+92 148 1
+92 674 2
+563 888 1
+563 278 1
+563 725 1
+563 631 1
+563 948 1
+563 655 1
+563 829 1
+563 386 1
+563 317 1
+563 515 1
+93 792 2
+93 699 2
+95 363 1
+95 177 1
+642 836 5
+642 914 5
+642 127 4
+97 337 1
+97 206 2
+97 179 1
+98 400 1
+99 728 1
+100 204 1
+101 537 1
+101 707 1
+602 289 1
+174 240 1
+174 222 1
+174 151 5
+174 821 1
+174 205 2
+174 950 4
+174 268 1
+174 681 1
+174 505 2
+174 867 1
+174 773 2
+174 244 1
+174 641 7
+174 703 1
+174 732 1
+174 910 2
+174 243 2
+174 951 1
+104 321 1
+104 441 1
+104 860 1
+104 308 1
+104 354 1
+104 952 1
+105 709 1
+105 458 1
+105 522 1
+105 300 1
+105 693 1
+105 922 1
+913 42 1
+913 777 1
+913 864 1
+106 570 1
+106 908 1
+107 432 1
+107 121 1
+107 185 2
+107 826 1
+107 946 1
+107 501 2
+107 349 1
+108 151 1
+108 571 1
+109 431 2
+110 162 1
+110 532 1
+110 909 2
+110 862 3
+110 266 1
+110 180 2
+110 221 1
+110 209 1
+110 507 3
+110 400 3
+110 299 2
+110 568 5
+110 287 2
+110 374 1
+110 816 2
+111 566 1
+113 456 1
+115 553 1
+115 747 1
+116 795 1
+116 335 1
+117 878 2
+118 263 2
+118 217 2
+118 125 3
+118 446 1
+118 873 6
+119 421 2
+119 442 5
+119 281 1
+119 468 2
+119 282 1
+119 122 1
+119 702 1
+119 830 1
+119 641 6
+119 920 1
+119 599 1
+121 933 1
+121 826 1
+121 946 1
+121 407 2
+121 476 1
+121 302 2
+121 420 1
+122 599 1
+122 282 1
+122 702 1
+122 830 1
+123 537 2
+123 842 3
+124 772 1
+648 952 1
+648 623 1
+648 364 1
+648 280 1
+127 836 5
+127 914 4
+127 400 1
+128 437 1
+128 577 1
+129 442 1
+511 532 1
+511 890 1
+511 899 1
+511 449 1
+511 950 2
+511 254 1
+511 241 2
+511 287 1
+511 678 2
+130 856 1
+130 587 1
+130 810 1
+130 694 1
+130 238 1
+131 367 1
+131 555 1
+132 858 2
+132 580 1
+133 629 1
+134 532 1
+134 637 1
+135 533 1
+135 884 1
+135 28 1
+135 667 5
+135 695 5
+136 178 1
+136 291 1
+136 850 3
+136 284 1
+136 638 1
+136 871 1
+136 112 1
+137 342 1
+900 411 1
+900 87 1
+138 320 8
+138 600 1
+138 488 1
+138 930 6
+138 461 8
+138 786 1
+138 656 8
+138 154 8
+138 159 1
+138 734 1
+815 594 1
+815 458 1
+815 365 2
+815 687 1
+815 314 1
+815 938 1
+815 733 1
+815 214 1
+140 199 1
+141 477 1
+141 787 1
+141 583 1
+144 399 1
+144 898 1
+146 878 1
+833 665 1
+148 946 1
+148 562 1
+148 626 1
+149 828 1
+150 816 1
+150 71 1
+152 741 1
+153 873 1
+154 320 12
+154 680 1
+154 461 9
+154 878 3
+154 797 3
+154 911 2
+154 901 3
+154 559 3
+154 826 2
+154 656 9
+154 307 1
+154 497 1
+154 257 1
+154 814 2
+154 615 1
+154 544 2
+154 873 1
+156 486 1
+156 651 1
+156 266 1
+156 696 1
+156 593 4
+156 653 2
+156 778 5
+156 483 1
+156 484 1
+157 227 1
+159 930 1
+159 786 1
+160 9 1
+160 724 1
+160 633 1
+160 261 1
+160 167 14
+160 248 3
+160 671 11
+160 102 2
+160 296 1
+160 258 1
+160 421 1
+160 625 1
+160 389 1
+160 632 1
+160 544 4
+160 531 1
+160 344 1
+161 537 1
+161 794 1
+161 781 1
+162 507 1
+163 770 1
+163 353 1
+163 657 1
+163 778 1
+164 868 1
+164 482 1
+164 921 1
+164 215 1
+165 227 9
+165 532 8
+165 928 2
+165 500 1
+165 353 4
+165 637 1
+165 509 2
+165 418 5
+165 82 1
+165 657 2
+165 844 5
+165 413 1
+823 597 1
+823 788 1
+166 852 1
+167 308 1
+167 248 7
+167 539 9
+167 255 1
+167 192 1
+167 544 9
+167 915 8
+167 724 2
+167 9 2
+167 671 13
+167 258 1
+167 726 1
+167 625 1
+167 389 15
+167 632 1
+167 421 1
+167 261 2
+167 930 2
+167 102 8
+167 272 4
+167 344 1
+167 633 1
+167 286 2
+167 531 1
+168 925 1
+168 418 1
+169 796 1
+169 461 1
+169 47 1
+170 362 1
+171 474 2
+171 640 2
+171 821 2
+171 918 2
+656 320 9
+656 680 1
+656 461 9
+656 341 1
+656 946 1
+656 125 2
+173 562 1
+173 380 1
+103 491 1
+103 416 4
+103 831 2
+175 685 1
+175 379 1
+176 936 5
+176 809 1
+176 811 1
+176 348 1
+177 363 1
+178 638 1
+178 291 1
+178 112 1
+179 337 4
+179 673 2
+179 206 3
+179 873 3
+462 586 1
+462 846 1
+462 608 1
+462 251 1
+462 184 1
+462 820 1
+462 524 1
+181 399 1
+182 679 1
+185 501 2
+185 432 1
+186 897 1
+187 748 1
+188 578 1
+189 508 1
+189 907 1
+189 789 1
+190 430 1
+190 804 1
+190 521 1
+192 389 1
+192 286 1
+192 248 1
+335 795 1
+194 252 1
+194 890 1
+194 438 1
+831 416 2
+196 698 2
+196 527 1
+355 616 1
+355 939 1
+198 568 1
+198 778 1
+198 332 1
+199 263 2
+199 891 1
+199 929 1
+199 843 1
+199 576 1
+199 435 1
+199 519 1
+199 759 1
+199 305 1
+199 788 8
+199 451 1
+199 775 1
+199 580 10
+199 763 1
+200 323 1
+125 217 2
+125 873 3
+205 641 7
+205 203 1
+205 867 2
+205 773 4
+205 761 1
+205 243 5
+206 673 1
+206 337 3
+206 873 1
+207 589 1
+208 838 1
+265 1 1
+265 853 1
+265 399 1
+265 400 1
+271 723 1
+271 495 1
+271 652 1
+841 774 3
+841 499 1
+277 172 1
+277 298 1
+212 889 1
+212 769 2
+212 565 2
+213 914 2
+213 327 1
+213 400 2
+298 172 1
+215 482 1
+215 868 1
+215 921 1
+216 749 1
+216 341 1
+216 485 1
+217 873 2
+218 723 2
+219 562 2
+219 523 2
+809 936 1
+341 749 1
+341 458 3
+341 295 1
+341 825 1
+341 643 1
+341 485 1
+221 507 1
+221 180 1
+223 523 1
+223 466 1
+224 792 1
+666 862 1
+666 339 1
+226 279 1
+227 532 12
+227 928 2
+227 778 2
+227 500 1
+227 353 1
+227 637 3
+227 887 1
+227 509 2
+227 418 1
+227 862 1
+227 844 1
+227 413 1
+228 209 1
+228 370 1
+229 557 1
+229 294 1
+230 461 1
+230 650 1
+231 263 1
+231 873 1
+361 739 1
+361 710 1
+319 312 1
+319 802 1
+319 126 1
+319 606 1
+319 253 1
+319 400 2
+319 453 1
+234 863 2
+234 557 2
+235 878 1
+237 359 1
+237 474 1
+237 529 1
+834 676 1
+239 639 1
+239 388 1
+239 329 1
+489 853 1
+489 400 1
+241 890 1
+241 449 1
+241 950 2
+241 254 1
+241 678 2
+242 641 1
+243 222 1
+243 641 7
+243 203 1
+243 773 6
+243 761 1
+203 641 1
+203 761 1
+244 151 2
+244 703 2
+246 601 1
+246 414 1
+246 318 1
+246 826 1
+247 410 1
+248 9 1
+248 753 1
+248 261 1
+248 801 1
+248 286 2
+248 671 2
+248 539 1
+248 258 1
+248 272 2
+248 389 5
+248 102 1
+248 544 4
+249 760 1
+249 764 1
+249 463 1
+313 879 1
+313 757 1
+313 485 1
+42 864 2
+42 836 3
+42 443 1
+42 433 3
+42 659 1
+42 777 2
+42 275 1
+251 586 1
+251 846 1
+251 608 1
+251 184 1
+251 820 1
+251 524 1
+252 890 1
+252 438 1
+253 312 1
+253 802 1
+253 126 1
+253 606 1
+253 400 1
+253 453 1
+254 950 1
+254 678 1
+255 726 1
+255 102 1
+256 697 1
+256 521 1
+257 826 1
+546 675 1
+546 711 1
+546 886 1
+546 791 1
+546 916 1
+259 510 1
+260 407 1
+261 930 1
+261 9 2
+261 671 1
+261 102 1
+261 272 1
+261 258 1
+261 544 1
+263 342 1
+263 305 1
+263 96 3
+263 435 1
+263 843 1
+263 936 1
+263 759 1
+263 788 1
+263 451 1
+263 775 1
+263 580 6
+263 873 5
+719 613 1
+719 556 1
+719 560 2
+719 444 1
+264 23 1
+264 534 1
+575 459 1
+575 270 1
+575 461 1
+266 778 1
+266 651 1
+266 806 1
+266 287 2
+266 483 1
+267 403 1
+267 816 1
+268 532 1
+268 151 2
+268 950 1
+268 240 1
+268 691 1
+268 951 1
+269 644 1
+269 658 1
+269 805 1
+269 554 1
+270 459 1
+270 461 1
+184 586 1
+184 846 1
+184 608 1
+184 820 1
+184 524 1
+829 888 1
+829 278 1
+829 725 1
+829 948 1
+829 655 1
+829 631 1
+829 386 1
+829 317 1
+829 515 1
+272 753 1
+272 801 1
+272 9 1
+272 671 1
+272 102 1
+272 930 1
+272 389 4
+272 544 5
+273 950 1
+273 645 1
+274 381 1
+274 373 1
+274 490 1
+275 836 2
+275 443 2
+275 433 1
+275 659 2
+276 532 1
+211 893 1
+278 888 1
+278 766 1
+278 725 1
+278 631 1
+278 948 1
+278 688 1
+278 655 2
+278 386 1
+278 317 1
+278 515 1
+280 952 1
+280 623 1
+280 364 1
+281 534 2
+281 558 2
+281 641 3
+282 599 1
+282 702 1
+282 830 1
+283 398 1
+283 512 1
+283 365 1
+887 532 1
+285 423 1
+285 460 1
+287 572 1
+287 806 1
+287 899 1
+287 627 1
+287 778 1
+288 862 1
+288 532 1
+288 821 1
+290 372 2
+290 819 2
+290 487 2
+290 442 2
+291 638 1
+291 112 1
+292 876 1
+293 909 3
+293 537 1
+293 949 2
+293 847 1
+293 828 2
+293 578 1
+293 657 1
+293 790 1
+293 778 2
+294 557 1
+520 753 1
+367 555 1
+300 709 2
+300 522 2
+300 458 2
+300 693 2
+300 922 1
+302 407 2
+302 933 1
+302 420 1
+304 641 1
+305 936 2
+305 342 2
+305 96 2
+306 915 1
+306 389 1
+308 321 5
+308 441 1
+308 860 5
+308 539 1
+308 915 1
+308 526 2
+308 564 2
+308 389 1
+308 952 3
+308 606 2
+308 450 2
+308 354 1
+309 742 1
+310 828 1
+310 595 1
+284 871 1
+314 687 1
+314 458 1
+314 938 1
+314 365 1
+649 889 1
+649 917 1
+316 813 2
+316 936 2
+316 514 1
+316 516 1
+316 504 1
+317 888 1
+317 725 1
+317 631 1
+317 948 1
+317 655 1
+317 386 1
+317 515 1
+318 601 1
+318 414 8
+318 593 2
+318 826 8
+412 641 1
+320 680 8
+320 767 1
+320 901 3
+320 547 7
+320 769 4
+320 878 12
+320 797 3
+320 461 9
+320 722 1
+321 441 1
+321 860 5
+321 354 1
+321 526 2
+321 564 2
+321 952 3
+321 606 2
+321 450 2
+322 465 1
+325 468 1
+325 641 2
+325 453 1
+325 660 1
+326 395 1
+327 914 1
+327 400 2
+9 930 1
+9 671 1
+9 102 1
+9 258 1
+9 544 1
+329 639 1
+330 769 1
+330 565 1
+331 471 1
+331 588 1
+331 66 1
+331 654 1
+331 718 1
+844 532 2
+844 805 1
+844 418 4
+844 578 1
+37 352 1
+37 942 1
+334 440 1
+334 450 1
+334 581 2
+949 828 3
+949 909 3
+949 537 1
+59 573 1
+337 673 1
+337 873 2
+338 442 2
+338 641 1
+339 862 1
+80 878 1
+87 411 1
+342 682 1
+342 550 1
+342 936 3
+342 96 2
+342 232 1
+343 479 1
+343 457 1
+345 544 4
+347 389 2
+347 877 2
+347 715 2
+347 690 2
+347 544 2
+350 747 1
+151 571 1
+151 828 2
+151 950 1
+151 703 2
+151 612 1
+151 904 1
+151 240 2
+151 951 1
+352 942 1
+352 468 1
+352 865 1
+352 660 1
+352 641 5
+353 532 1
+354 441 1
+354 860 1
+354 952 1
+197 578 1
+356 792 1
+358 713 1
+637 532 3
+637 778 4
+637 770 1
+637 657 2
+697 521 1
+697 837 1
+359 474 1
+359 421 2
+359 753 2
+359 529 1
+360 909 1
+849 677 1
+691 532 2
+365 594 2
+365 821 1
+365 579 1
+365 458 2
+365 950 1
+365 398 1
+365 687 1
+365 507 1
+365 938 1
+365 512 1
+365 733 1
+365 214 2
+775 580 2
+775 435 1
+775 788 1
+775 451 1
+775 843 1
+366 606 4
+366 400 4
+61 731 2
+61 492 1
+61 538 2
+368 536 1
+368 822 1
+370 209 1
+692 580 2
+372 819 2
+372 487 2
+372 442 3
+372 506 1
+534 558 2
+534 704 1
+534 23 1
+374 507 1
+374 180 1
+375 544 1
+375 663 1
+377 425 1
+380 562 3
+381 490 1
+381 373 1
+914 836 6
+914 400 5
+382 798 1
+382 391 1
+384 606 1
+536 822 1
+386 888 1
+386 725 1
+386 631 1
+386 948 1
+386 655 1
+386 515 1
+387 754 1
+387 712 1
+387 789 1
+387 582 1
+387 464 1
+389 286 2
+389 753 2
+389 801 1
+389 877 2
+389 671 1
+389 539 13
+389 915 9
+389 715 2
+389 690 8
+389 544 19
+390 583 3
+391 798 1
+392 874 1
+393 836 1
+394 585 1
+396 635 1
+396 378 1
+794 781 2
+794 537 2
+794 407 1
+398 512 1
+399 1 1
+399 853 1
+399 898 1
+399 400 3
+400 1 1
+400 836 1
+400 842 1
+400 896 1
+400 312 1
+400 425 3
+400 606 6
+400 853 3
+400 126 1
+400 646 1
+400 442 1
+400 802 1
+400 936 1
+400 902 1
+400 453 1
+401 939 1
+487 819 3
+487 641 1
+487 442 3
+487 732 1
+698 527 1
+403 816 1
+907 508 1
+907 789 1
+406 537 1
+406 909 1
+407 225 1
+407 670 1
+407 472 2
+407 933 1
+407 523 1
+407 419 1
+407 420 2
+407 664 1
+408 541 1
+408 434 1
+90 883 1
+90 605 1
+90 478 1
+90 880 1
+415 641 2
+126 312 1
+126 802 1
+126 606 1
+126 453 1
+417 857 1
+417 905 1
+418 925 3
+418 835 1
+418 838 1
+418 574 1
+418 790 1
+418 532 2
+418 578 1
+419 670 1
+420 933 1
+421 442 3
+421 468 2
+421 671 1
+421 753 6
+421 641 4
+421 920 1
+202 874 1
+202 717 1
+423 460 1
+424 937 1
+424 409 1
+348 936 2
+348 811 1
+426 817 4
+426 785 3
+426 628 1
+860 441 1
+860 526 2
+860 564 2
+860 952 3
+860 606 2
+860 450 2
+409 937 1
+429 813 1
+429 516 1
+429 504 1
+430 804 1
+430 521 1
+431 943 1
+432 501 1
+433 836 8
+433 443 2
+433 840 1
+433 659 1
+434 541 1
+436 621 1
+436 619 1
+437 577 1
+545 845 1
+545 689 1
+545 737 1
+545 735 1
+439 753 2
+439 142 1
+439 473 1
+440 450 1
+440 581 1
+441 952 1
+442 646 1
+442 819 7
+442 506 1
+442 468 2
+442 402 1
+442 920 1
+442 931 1
+442 641 11
+442 732 1
+442 881 1
+443 836 3
+443 659 2
+444 556 1
+444 560 1
+444 613 1
+445 753 1
+445 473 1
+448 209 2
+449 950 1
+449 890 1
+449 678 1
+450 526 6
+450 581 1
+450 564 2
+450 952 2
+450 606 3
+451 799 1
+451 580 2
+451 435 1
+451 788 1
+451 843 1
+452 422 2
+881 819 1
+453 641 1
+453 802 1
+453 606 1
+453 312 1
+455 557 1
+457 479 1
+214 594 2
+214 733 1
+459 461 1
+461 680 1
+461 603 1
+461 650 1
+461 728 1
+461 47 1
+461 796 1
+868 482 1
+868 921 1
+845 735 1
+845 689 1
+845 737 1
+466 523 1
+549 818 2
+549 745 1
+549 530 1
+1 853 1
+471 588 1
+471 66 1
+471 654 1
+471 718 1
+473 142 1
+473 753 3
+473 535 1
+474 821 2
+474 918 2
+474 640 2
+474 529 1
+32 906 1
+32 516 1
+32 504 1
+477 590 1
+477 583 2
+477 787 1
+478 883 1
+478 605 1
+478 880 1
+66 588 1
+66 654 1
+66 718 1
+482 921 1
+483 651 1
+485 749 1
+485 879 1
+485 757 1
+485 565 1
+486 696 1
+488 930 1
+539 915 8
+539 941 1
+490 373 1
+491 416 1
+492 731 1
+492 538 1
+493 640 1
+493 821 1
+495 723 1
+495 652 1
+497 559 1
+497 544 1
+498 209 1
+502 580 1
+503 736 2
+503 503 1
+504 906 1
+504 936 1
+504 813 2
+504 516 3
+505 950 2
+507 458 1
+507 180 2
+240 882 1
+240 828 7
+240 950 1
+240 612 1
+240 951 1
+240 953 4
+240 923 1
+71 816 1
+513 836 1
+515 888 1
+515 725 1
+515 631 1
+515 948 1
+515 655 1
+516 906 1
+516 936 1
+516 813 2
+517 895 1
+878 797 9
+878 901 3
+878 547 14
+878 769 2
+878 680 7
+878 634 1
+878 803 1
+878 569 1
+878 869 12
+878 788 2
+878 875 1
+463 760 1
+463 764 1
+295 643 1
+295 458 1
+521 804 1
+522 709 2
+522 458 2
+522 788 2
+522 693 2
+522 922 1
+523 562 7
+523 927 1
+523 669 1
+525 708 1
+525 701 1
+525 139 1
+525 369 1
+526 564 2
+526 952 2
+526 606 3
+379 685 1
+531 671 1
+532 940 1
+532 755 1
+532 862 2
+532 509 2
+532 413 1
+533 884 1
+533 667 1
+533 695 1
+385 729 1
+537 781 2
+537 909 4
+537 707 2
+537 828 2
+537 842 5
+537 747 1
+537 872 1
+538 731 2
+402 819 1
+540 544 7
+543 566 2
+543 765 1
+183 596 1
+183 591 1
+183 924 1
+438 890 2
+725 888 1
+725 631 1
+725 948 1
+725 655 1
+547 680 7
+468 660 2
+468 641 4
+468 920 1
+550 936 1
+142 753 1
+524 586 1
+524 846 1
+524 820 1
+524 608 1
+554 644 1
+554 658 1
+554 805 1
+530 818 1
+556 613 1
+556 560 1
+557 863 2
+934 769 3
+934 565 1
+559 911 2
+559 544 1
+560 613 1
+562 928 1
+562 669 1
+562 866 1
+562 946 2
+562 626 1
+562 397 1
+562 832 1
+562 425 1
+435 580 1
+435 788 1
+435 843 1
+564 952 2
+564 606 2
+565 769 4
+566 765 1
+567 808 1
+567 618 1
+567 315 1
+567 311 1
+568 778 1
+568 332 1
+569 803 1
+233 607 1
+570 908 1
+572 580 2
+574 925 1
+576 580 1
+576 788 1
+577 885 1
+578 929 1
+578 790 2
+578 805 1
+578 519 1
+580 750 1
+580 891 1
+580 799 1
+580 622 1
+580 759 2
+580 788 8
+580 843 4
+580 598 1
+580 858 1
+514 813 1
+514 936 1
+582 754 1
+582 712 1
+582 789 1
+582 464 1
+413 776 1
+586 846 1
+586 608 1
+586 820 1
+588 654 1
+588 718 1
+589 935 1
+590 583 1
+591 596 1
+591 924 1
+592 544 1
+592 716 1
+593 414 4
+593 620 1
+593 826 4
+593 778 4
+593 892 1
+594 733 1
+595 828 1
+595 909 3
+414 926 1
+414 601 6
+414 620 2
+414 826 17
+414 945 1
+414 624 1
+414 892 1
+598 750 1
+598 759 1
+599 702 1
+599 830 1
+600 930 1
+892 620 1
+892 826 1
+601 620 1
+601 826 6
+601 945 1
+601 624 1
+446 873 1
+604 641 1
+625 344 1
+625 671 1
+625 632 1
+606 802 1
+606 842 1
+606 312 1
+606 952 2
+607 909 1
+607 828 3
+607 923 1
+608 846 1
+608 820 1
+610 893 1
+612 828 1
+712 754 1
+712 789 1
+712 464 1
+615 544 1
+615 873 1
+464 754 1
+464 789 1
+617 641 1
+618 808 1
+618 315 1
+618 311 1
+619 621 1
+620 945 1
+620 624 1
+620 826 2
+623 952 1
+623 364 1
+624 945 1
+624 826 1
+626 946 1
+519 929 2
+519 763 1
+786 930 1
+28 667 1
+28 695 1
+344 671 1
+344 632 1
+734 930 1
+631 888 1
+631 948 1
+631 655 1
+785 817 3
+785 628 1
+638 112 1
+640 821 3
+640 918 2
+641 222 1
+641 773 7
+641 910 6
+641 783 2
+641 854 3
+641 920 1
+641 732 2
+641 681 1
+641 867 2
+641 819 1
+641 660 2
+641 683 1
+641 761 1
+96 936 3
+643 458 1
+644 658 1
+644 805 1
+222 773 1
+647 842 3
+654 718 1
+655 888 1
+655 948 1
+655 688 1
+655 766 1
+657 909 1
+657 770 6
+657 847 1
+657 778 12
+658 805 1
+659 836 2
+905 857 2
+663 236 1
+663 544 5
+664 225 1
+425 928 1
+425 932 1
+425 946 1
+425 832 1
+425 668 1
+667 884 1
+667 695 6
+671 724 1
+671 102 7
+671 930 2
+671 544 6
+671 632 1
+673 873 2
+727 191 1
+675 711 1
+675 886 1
+675 791 1
+675 916 1
+678 890 1
+678 950 2
+508 789 1
+681 732 1
+683 854 1
+683 910 1
+686 909 1
+687 458 1
+687 938 1
+688 766 1
+689 735 1
+689 737 1
+690 877 2
+690 715 2
+690 544 8
+364 952 1
+371 812 1
+693 709 2
+693 458 2
+693 922 1
+694 856 1
+694 587 1
+694 810 1
+694 238 1
+944 583 1
+583 787 1
+583 467 1
+303 46 1
+699 792 4
+668 932 1
+701 708 1
+701 139 1
+701 369 1
+702 830 1
+707 747 1
+708 139 1
+708 369 1
+709 458 2
+709 922 1
+711 916 1
+711 791 1
+711 886 1
+494 919 1
+901 797 3
+715 877 2
+715 544 2
+716 544 1
+535 753 1
+553 747 1
+378 635 1
+723 652 1
+724 544 1
+587 856 1
+587 810 1
+587 238 1
+726 102 1
+605 883 1
+605 880 1
+732 819 1
+735 737 1
+695 884 1
+739 710 1
+746 616 1
+746 939 1
+750 759 1
+753 801 1
+753 890 4
+753 544 2
+754 789 1
+757 879 1
+758 717 1
+597 788 1
+763 929 1
+924 596 1
+767 769 1
+768 912 1
+770 778 6
+717 903 1
+717 874 1
+311 808 1
+311 315 1
+312 802 1
+777 864 2
+778 909 3
+778 806 1
+778 847 1
+778 332 1
+779 467 1
+783 854 2
+784 740 1
+788 891 1
+788 930 4
+788 843 1
+788 544 4
+930 102 2
+930 544 13
+826 926 1
+826 945 1
+826 946 1
+793 828 2
+47 796 1
+801 544 1
+102 544 9
+808 315 1
+810 856 1
+810 238 1
+811 936 1
+813 936 3
+139 369 1
+816 862 2
+817 628 1
+818 745 1
+820 846 1
+821 950 3
+821 53 1
+821 918 2
+825 458 1
+193 616 1
+193 939 1
+828 909 9
+828 848 2
+828 882 1
+828 904 1
+828 953 4
+828 923 2
+236 544 1
+832 928 1
+832 946 1
+238 856 1
+836 840 1
+838 925 1
+847 909 1
+848 909 2
+363 941 1
+854 910 1
+645 950 1
+862 909 1
+544 950 3
+544 873 1
+544 877 2
+57 467 1
+879 672 1
+880 883 1
+458 938 1
+458 922 1
+616 939 3
+886 791 1
+886 916 1
+774 499 1
+888 948 1
+890 950 1
+791 916 1
+902 936 1
+909 923 2
+53 950 1
+764 760 1
+928 946 1
+950 951 1

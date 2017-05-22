@@ -62,15 +62,7 @@ d3.json("data/author_data_oct13.json", function(error, graph) {
       .call(d3.drag()
           .on("start", dragstarted)
           .on("drag", dragged)
-          .on("end", dragended))
-    .append("text")
-      .text(function(d){ 
-        var names = d.name.split(" ");
-        var initials = "";
-        for(var j = 0; j < names.length; j++){
-            initials += names[j][0];
-        }
-        return initials});
+          .on("end", dragended));
 
   node.append("title")
       .text(function(d) { return d.name; });

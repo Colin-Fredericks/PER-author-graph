@@ -135,7 +135,7 @@ function dragended(d) {
 function clicked(d, i) {
   if (d3.event.defaultPrevented) return; // dragged
 
-  simulation.force("center", d3.forceCenter(d3.event.x, d3.event.y));
+  simulation.force("center", d3.forceCenter(width - d3.event.x, height - d3.event.y));
 }
 
 </script>

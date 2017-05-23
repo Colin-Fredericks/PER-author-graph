@@ -272,7 +272,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         .append('text')
         .attr('x', 920)
         .attr('y', function(d,i) { return 570 + i * 18; })
-        .style("background-color", "white");
+        .style("background-color", "white")
         .text(function(d) { return d; });
 
     return graph;

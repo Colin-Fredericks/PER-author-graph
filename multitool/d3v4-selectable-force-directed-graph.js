@@ -96,7 +96,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
                 .id(function(d) { return d.id; })
                 .strength(.5)
                 .distance(function(d) { 
-                    return 30;
+                    return 50;
                     //var dist = 20 / d.value;
                     //console.log('dist:', dist);
 

@@ -110,7 +110,9 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         .force("center", d3v4.forceCenter(parentWidth / 2, parentHeight / 2))
         .force("x", d3v4.forceX(parentWidth/2))
         .force("y", d3v4.forceY(parentHeight/2));
-
+    
+    console.log('Force: -600, max distance: 1000, distance: 100, strength: .7');
+    
     simulation
         .nodes(graph.nodes)
         .on("tick", ticked);

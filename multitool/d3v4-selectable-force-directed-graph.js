@@ -94,9 +94,9 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
     var simulation = d3v4.forceSimulation()
         .force("link", d3v4.forceLink()
                 .id(function(d) { return d.id; })
-                .strength(.5)
+                .strength(.7)
                 .distance(function(d) { 
-                    return 50;
+                    return 100;
                     //var dist = 20 / d.value;
                     //console.log('dist:', dist);
 

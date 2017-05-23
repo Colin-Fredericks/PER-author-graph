@@ -111,7 +111,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         .force("x", d3v4.forceX(parentWidth/2))
         .force("y", d3v4.forceY(parentHeight/2));
     
-    console.log('Force: -600, max distance: infinity, distance: 100, strength: .7');
+    console.log('Force: -200, max distance: infinity, distance: 100, strength: .7');
     
     simulation
         .nodes(graph.nodes)

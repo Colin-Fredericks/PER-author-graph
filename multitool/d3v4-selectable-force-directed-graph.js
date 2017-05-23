@@ -271,7 +271,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         .enter()
         .append('text')
         .attr('x', 900)
-        .attr('y', function(d,i) { return 470 + i * 18; })
+        .attr('y', function(d,i) { return 570 + i * 18; })
         .text(function(d) { return d; });
 
     return graph;

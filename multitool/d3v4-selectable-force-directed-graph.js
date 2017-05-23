@@ -104,7 +104,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
                 })
               )
         .force("charge", d3v4.forceManyBody()
-            .strength(-600)
+            .strength(-200)
 //            .distanceMax(1000)
             )
         .force("center", d3v4.forceCenter(parentWidth / 2, parentHeight / 2))

@@ -85,7 +85,12 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         .on("end", dragended));
 
     var nodeText = nodeGroup.append("text")
-        .text(function(d){ return d.id; });
+        .text(function(d){ return d.id; })
+        .attr("fill","black")
+        .call(d3v4.drag()
+        .on("start", dragstarted)
+        .on("drag", dragged)
+        .on("end", dragended));
 
     // add titles for mouseover blurbs
     node.append("title")
@@ -134,6 +139,8 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
             .attr("y2", function(d) { return d.target.y; });
 
         node.attr("cx", function(d) { return d.x; })
+            .attr("cy", function(d) { return d.y; });
+        nodeText.attr("cx", function(d) { return d.x; })
             .attr("cy", function(d) { return d.y; });
     }
 

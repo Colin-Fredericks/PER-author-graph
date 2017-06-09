@@ -10,8 +10,11 @@
 }
 
 #d3_selectable_force_directed_graph text {
-  stroke: #fff;
-  stroke-width: 0px;
+  text-shadow:
+      -1px -1px 0 #FFF,
+       1px -1px 0 #FFF,
+      -1px  1px 0 #FFF,
+       1px  1px 0 #FFF;
 }
 
 .node .selected {

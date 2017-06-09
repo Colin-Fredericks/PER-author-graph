@@ -18,6 +18,19 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
     // remove any previous graphs
     svg.selectAll('.g-main').remove();
 
+    // Put the text on top so we can use background-color to help it stand out
+    var texts = ['Use the scroll wheel to zoom',
+                 'Hold the shift key to select nodes']
+
+    svg.selectAll('text')
+        .data(texts)
+        .enter()
+        .append('text')
+        .attr('x', 920)
+        .attr('y', function(d,i) { return 570 + i * 18; })
+        .style("background-color", "white")
+        .text(function(d) { return d; });
+
     var gMain = svg.append('g')
     .classed('g-main', true);
 
@@ -68,7 +81,8 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         .attr("class", "node")
         .selectAll("circle")
         .data(graph.nodes)
-        .enter().append("circle")
+        .enter().append("g")
+        .append("circle")
         .attr("r", function(d) { return Math.sqrt(d.publications) * 4; })
         .attr("fill", function(d) {
             if ('color' in d)
@@ -262,18 +276,6 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
             d.fy = null;
         })
     }
-
-    var texts = ['Use the scroll wheel to zoom',
-                 'Hold the shift key to select nodes']
-
-    svg.selectAll('text')
-        .data(texts)
-        .enter()
-        .append('text')
-        .attr('x', 920)
-        .attr('y', function(d,i) { return 570 + i * 18; })
-        .style("background-color", "white")
-        .text(function(d) { return d; });
 
     return graph;
 };

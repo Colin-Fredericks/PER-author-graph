@@ -82,7 +82,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         .on("drag", dragged)
         .on("end", dragended));
 
-    node.append("text")
+    node.insert("text")
         .text(function(d){ return d.id; });
 
     // add titles for mouseover blurbs

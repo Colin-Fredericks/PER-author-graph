@@ -86,7 +86,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
 
     var nodeText = nodeGroup.append("text")
         .text(function(d){ return d.initials; })
-        .attr("text-size", function(d){
+        .attr("font-size", function(d){
           return Math.max(Math.sqrt(d.publications) * 2, 10);
         })
         .attr("fill","black")

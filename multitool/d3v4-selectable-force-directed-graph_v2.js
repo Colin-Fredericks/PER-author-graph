@@ -68,8 +68,10 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         .attr("class", "node")
         .selectAll("circle")
         .data(graph.nodes)
-        .enter().append("g")
-        .append("circle")
+        .enter()
+        .append("g");
+
+    node.append("circle")
         .attr("r", function(d) { return Math.sqrt(d.publications) * 4; })
         .attr("fill", function(d) {
             if ('color' in d)
@@ -82,7 +84,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         .on("drag", dragged)
         .on("end", dragended));
 
-    node.insert("text")
+    node.append("text")
         .text(function(d){ return d.id; });
 
     // add titles for mouseover blurbs

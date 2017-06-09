@@ -38,7 +38,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         gDraw.attr('transform', d3v4.event.transform);
     }
 
-    var color = d3v4.scaleOrdinal(d3v4.schemeCategory10 +1);
+    var color = d3v4.scaleOrdinal(d3v4.schemeCategory10);
 
     if (! ("links" in graph)) {
         console.log("Graph is missing links");

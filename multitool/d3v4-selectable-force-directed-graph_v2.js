@@ -140,8 +140,8 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
 
         node.attr("cx", function(d) { return d.x; })
             .attr("cy", function(d) { return d.y; });
-        nodeText.attr("x", function(d) { return d.x; })
-            .attr("y", function(d) { return d.y; });
+        nodeText.attr("x", function(d) { return (d.x + Math.sqrt(d.publications) * 2); })
+            .attr("y", function(d) { return (d.y + Math.sqrt(d.publications) * 2); });
     }
 
     var brushMode = false;

@@ -1,0 +1,29 @@
+  <!DOCTYPE html>
+    <head>
+          <meta charset="utf-8" />
+</head>
+<div align='center' id="d3_selectable_force_directed_graph" style="width: 960px; height: 600px; margin: auto; margin-bottom: 12px">
+    <svg />
+</div>
+<div id="databox">
+  <div id="namelist">Name list will go here</div>
+  <div id="moreinfo">More info will go here</div>
+</div>
+
+<link rel='stylesheet' href='multitool/d3v4-selectable-zoomable-force-directed-graph-v3.css'>
+<script src="d3/d3.js"></script>
+<script src="multitool/d3v4-brush-lite.js"></script>
+<script src="multitool/d3v4-selectable-force-directed-graph_v3.js"></script>
+
+<script>
+    var svg = d3.select('#d3_selectable_force_directed_graph');
+
+    d3.json('data/author_data_oct13.json', function(error, graph) {
+        if (!error) {
+            //console.log('graph', graph);
+            createV4SelectableForceDirectedGraph(svg, graph);
+        } else {
+            console.error(error);
+        }
+    });
+</script>

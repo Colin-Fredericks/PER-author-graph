@@ -194,8 +194,8 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         node.classed("selected", shouldSelect);
         
         if(shouldSelect){
-            var authorInfo = d3v4.select("#moreinfo")
-                .append("p")
+            var authorInfo = d3v4.select('#moreinfo');
+            authorInfo.append("p")
                 .text("testing");
         }
     }

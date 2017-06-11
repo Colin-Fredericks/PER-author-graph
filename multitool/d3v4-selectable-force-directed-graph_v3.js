@@ -257,13 +257,16 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
 
     function updateInfo(d){
         var authorInfo = d3v4.select('#moreinfo');
-
+        
+        // Clear existing author info
         authorInfo.selectAll('p').remove();
-        if('name' in author){
+        
+        // Add whatever info we have
+        if('name' in d){
             authorInfo.append("p")
             .html('<strong>Author:</strong> ' + d.name)
         }
-        if('publications' in author){
+        if('publications' in d){
             authorInfo.append("p")
             .html('<strong>Publications:</strong> ' + d.publications);
         }

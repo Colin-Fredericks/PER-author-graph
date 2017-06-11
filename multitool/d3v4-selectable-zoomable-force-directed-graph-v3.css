@@ -1,4 +1,4 @@
-#d3_selectable_force_directed_graph svg {
+q#d3_selectable_force_directed_graph svg {
     border: 1px solid;
     font: 13px sans-serif;
     text-anchor: end;
@@ -26,4 +26,16 @@
 .link {
   stroke: #999;
   stroke-opacity: 0.6;
+}
+
+#namelist {
+    display: inline-block;
+    width: 20%;
+    border: 1px solid black;
+}
+
+#moreinfo {
+    display: inline-block;
+    width: 80%
+    border: 1px solid black;
 }

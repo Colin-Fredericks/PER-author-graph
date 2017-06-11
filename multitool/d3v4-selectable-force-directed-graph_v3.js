@@ -186,12 +186,12 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         if (!d3v4.event.selection) return;
 
         var extent = d3v4.event.selection;
-
-        node.classed("selected", function(d) {
-            return d.selected = d.previouslySelected ^
+        
+        var shouldSelect = d.selected = d.previouslySelected ^
             (extent[0][0] <= d.x && d.x < extent[1][0]
              && extent[0][1] <= d.y && d.y < extent[1][1]);
-        });
+
+        node.classed("selected", shouldSelect);
     }
 
     function brushended() {

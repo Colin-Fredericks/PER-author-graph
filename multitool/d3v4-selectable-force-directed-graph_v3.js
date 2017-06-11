@@ -81,9 +81,10 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
                 return color(d.group);
         })
         .call(d3v4.drag()
-        .on("start", dragstarted)
-        .on("drag", dragged)
-        .on("end", dragended));
+          .on("start", dragstarted)
+          .on("drag", dragged)
+          .on("end", dragended))
+        .call(addNameToList(d));
 
     var nodeText = nodeGroup.append("text")
         .text(function(d){ return d.initials; })
@@ -254,6 +255,15 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
             gBrush = null;
         }
     }
+    
+    function addNameToList(d){
+        var authorList = d3v4.select('#namelist');
+        authorList.selectAll('p').remove();
+        if('name' in d){
+            authorList.append("p")
+            .text(d.name);
+        }
+    }
 
     function updateInfo(d){
         var authorInfo = d3v4.select('#moreinfo');
@@ -264,7 +274,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         // Add whatever info we have
         if('name' in d){
             authorInfo.append("p")
-            .html('<strong>Author:</strong> ' + d.name)
+            .html('<strong>Author:</strong> ' + d.name);
         }
         if('publications' in d){
             authorInfo.append("p")

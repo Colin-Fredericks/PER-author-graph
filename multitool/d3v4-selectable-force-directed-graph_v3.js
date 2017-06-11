@@ -261,15 +261,15 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         if (!d.selected && !shiftKey) {
             // if this node isn't selected, then we have to unselect every other node
             node.classed("selected", function(p) { return p.selected =  p.previouslySelected = false; });
-            console.log('selecting from 1');
+            console.log(d);
             
             var authorInfo = d3v4.select('#moreinfo');
+            var authorName = d.name;
+            
             console.log(authorInfo);
             authorInfo.selectAll('p').remove();
             authorInfo.append("p")
-                .text(function(d) {
-                    return 'Author Name: ' + d.name;
-                });
+                .text(authorName);
         }
 
         d3v4.select(this).classed("selected", function(p) { d.previouslySelected = d.selected; return d.selected = true; });

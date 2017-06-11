@@ -93,9 +93,9 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         })
         .attr("fill","black")
         .call(d3v4.drag()
-        .on("start", dragstarted)
-        .on("drag", dragged)
-        .on("end", dragended));
+          .on("start", dragstarted)
+          .on("drag", dragged)
+          .on("end", dragended));
 
     // add titles for mouseover blurbs
     node.append("title")

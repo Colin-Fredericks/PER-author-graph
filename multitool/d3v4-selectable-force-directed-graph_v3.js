@@ -271,9 +271,9 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
             console.log(authorInfo);
             authorInfo.selectAll('p').remove();
             authorInfo.append("p")
-                .text('Author: ' + authorName)
-              .append("p")
-                .text('Publications: ' + authorPublications);
+                .html('<strong>Author:</strong> ' + authorName)
+            authorInfo.append("p")
+                .html('<strong>Publications:</strong> ' + authorPublications);
                 
         }
 

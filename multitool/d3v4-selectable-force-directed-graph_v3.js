@@ -255,17 +255,17 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         }
     }
 
-    function updateInfo(author){
+    function updateInfo(d){
         var authorInfo = d3v4.select('#moreinfo');
 
         authorInfo.selectAll('p').remove();
         if('name' in author){
             authorInfo.append("p")
-            .html('<strong>Author:</strong> ' + author.name)
+            .html('<strong>Author:</strong> ' + d.name)
         }
         if('publications' in author){
             authorInfo.append("p")
-            .html('<strong>Publications:</strong> ' + author.publications);
+            .html('<strong>Publications:</strong> ' + d.publications);
         }
     }
 
@@ -276,14 +276,8 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
             // if this node isn't selected, then we have to unselect every other node
             node.classed("selected", function(p) { return p.selected =  p.previouslySelected = false; });
             console.log(d);
-            
-            var author = {
-                'name': d.name,
-                'publications': d.publications,
-                'id': d.id
-            };
-            
-            updateInfo(author);
+                        
+            updateInfo(d);
                 
         }
 

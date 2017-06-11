@@ -1,3 +1,7 @@
+body {
+    font: 13px sans-serif;
+}
+
 #d3_selectable_force_directed_graph {
     float:left;
 }

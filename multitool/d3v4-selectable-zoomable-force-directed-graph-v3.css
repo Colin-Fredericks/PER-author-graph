@@ -36,6 +36,6 @@ q#d3_selectable_force_directed_graph svg {
 
 #moreinfo {
     display: inline-block;
-    width: 80%
+    width: 80%;
     border: 1px solid black;
 }

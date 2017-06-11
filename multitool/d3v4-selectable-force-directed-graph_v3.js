@@ -265,8 +265,12 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
             
             var authorInfo = d3v4.select('#moreinfo');
             console.log(authorInfo);
+            authorInfo.selectAll('p').remove();
             authorInfo.append("p")
-                .text("testing");
+                .text('Author: ' + function(d) {
+                    if ('name' in d) return d.name;
+                    else return d.id;
+                });
         }
 
         d3v4.select(this).classed("selected", function(p) { d.previouslySelected = d.selected; return d.selected = true; });

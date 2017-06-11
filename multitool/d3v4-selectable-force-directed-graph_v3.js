@@ -255,6 +255,20 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         }
     }
 
+    function updateInfo(author){
+        var authorInfo = d3v4.select('#moreinfo');
+
+        authorInfo.selectAll('p').remove();
+        if('name' in author){
+            authorInfo.append("p")
+            .html('<strong>Author:</strong> ' + author.name)
+        }
+        if('publications' in author){
+            authorInfo.append("p")
+            .html('<strong>Publications:</strong> ' + author.publications);
+        }
+    }
+
     function dragstarted(d) {
       if (!d3v4.event.active) simulation.alphaTarget(0.9).restart();
 
@@ -263,17 +277,13 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
             node.classed("selected", function(p) { return p.selected =  p.previouslySelected = false; });
             console.log(d);
             
-            var authorInfo = d3v4.select('#moreinfo');
-            var authorName = d.name;
-            var authorPublications = d.publications;
-            var authorName = d.name;
+            var author = {
+                'name': d.name,
+                'publications': d.publications,
+                'id': d.id
+            };
             
-            console.log(authorInfo);
-            authorInfo.selectAll('p').remove();
-            authorInfo.append("p")
-                .html('<strong>Author:</strong> ' + authorName)
-            authorInfo.append("p")
-                .html('<strong>Publications:</strong> ' + authorPublications);
+            updateInfo(author);
                 
         }
 

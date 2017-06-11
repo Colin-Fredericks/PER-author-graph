@@ -1,4 +1,4 @@
-q#d3_selectable_force_directed_graph svg {
+#d3_selectable_force_directed_graph svg {
     border: 1px solid;
     font: 13px sans-serif;
     text-anchor: end;
@@ -29,8 +29,7 @@ q#d3_selectable_force_directed_graph svg {
 }
 
 #namelist {
-    display: inline-block;
-    width: 20%;
+    width: 200px;
     border: 1px solid black;
     float: left;
 }

@@ -6,6 +6,10 @@ body {
     float:left;
 }
 
+#d3_selectable_force_directed_graph p {
+    margin: 3px 0px 3px 6px;
+}
+
 #d3_selectable_force_directed_graph svg {
     border: 1px solid;
     font: 13px sans-serif;

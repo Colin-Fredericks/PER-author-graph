@@ -192,9 +192,11 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
              && extent[0][1] <= d.y && d.y < extent[1][1]);
 
         node.classed("selected", shouldSelect);
+        console.log(shouldSelect);
         
         if(shouldSelect){
             var authorInfo = d3v4.select('#moreinfo');
+            console.log(authorInfo);
             authorInfo.append("p")
                 .text("testing");
         }

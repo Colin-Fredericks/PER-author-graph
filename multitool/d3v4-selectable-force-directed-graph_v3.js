@@ -192,7 +192,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
              && extent[0][1] <= d.y && d.y < extent[1][1]);
 
         node.classed("selected", shouldSelect);
-        console.log(shouldSelect);
+        console.log('selecting from 2');
         
         if(shouldSelect){
             var authorInfo = d3v4.select('#moreinfo');
@@ -261,6 +261,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         if (!d.selected && !shiftKey) {
             // if this node isn't selected, then we have to unselect every other node
             node.classed("selected", function(p) { return p.selected =  p.previouslySelected = false; });
+            console.log('selecting from 1');
         }
 
         d3v4.select(this).classed("selected", function(p) { d.previouslySelected = d.selected; return d.selected = true; });

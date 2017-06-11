@@ -84,7 +84,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
           .on("start", dragstarted)
           .on("drag", dragged)
           .on("end", dragended))
-        .call(addNameToList(d));
+        .call(function(d){addNameToList(d)});
 
     var nodeText = nodeGroup.append("text")
         .text(function(d){ return d.initials; })

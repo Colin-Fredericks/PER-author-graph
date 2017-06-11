@@ -83,8 +83,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         .call(d3v4.drag()
           .on("start", dragstarted)
           .on("drag", dragged)
-          .on("end", dragended))
-        .call(function(d){addNameToList(d)});
+          .on("end", dragended));
 
     var nodeText = nodeGroup.append("text")
         .text(function(d){ return d.initials; })
@@ -112,6 +111,10 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
             else
                 return d.id;
         });
+        
+    // Add author names to list
+    ndoe.each(function(d){ addNameToList(d) });
+
 
     var simulation = d3v4.forceSimulation()
         .force("link", d3v4.forceLink()

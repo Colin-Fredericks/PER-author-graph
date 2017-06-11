@@ -268,8 +268,8 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
             authorInfo.selectAll('p').remove();
             authorInfo.append("p")
                 .text(function(d) {
-                    if ('name' in d) return 'Author Name: ' + d.name;
-                    else return 'Author ID: ' + d.id;
+                    if ('name' in d){ return 'Author Name: ' + d.name; }
+                    else{ return 'Author ID: ' + d.id; }
                 });
         }
 

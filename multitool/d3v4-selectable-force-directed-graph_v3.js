@@ -268,16 +268,14 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
     
     function addNameToList(d){
         var authorList = d3v4.select('#namelist');
-        if('name' in d){
-            authorList.data(graph.nodes)
+        
+        var authors = authorList
             .selectAll('p')
-            .enter()
-            .append('p')
+            .data(graph.links)
+            .enter().append('p')
             .text(d.name)
             .on('click', function(d){updateInfo(d)});
-        }
-        
-        
+            
     }
 
     function updateInfo(d){

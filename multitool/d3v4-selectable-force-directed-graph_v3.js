@@ -299,6 +299,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
             updateInfo(d);
 
             // Selecting styles links.
+            console.log('set style for connected links')
             d3.selectAll('.link line')
               .filter(function(d) {
                  return (d.source === node) || (d.target === node);

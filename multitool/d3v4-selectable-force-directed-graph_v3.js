@@ -300,8 +300,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
 
             // Selecting styles links.
             console.log('set style for connected links')
-            d3.selectAll('.link line')
-              .filter(function(d) {
+            link.filter(function(d) {
                  return (d.source === node) || (d.target === node);
                })
               .classed('selected', true);

@@ -113,7 +113,13 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         });
         
     // Add author names to list
-    addNameToList(d);
+    var authorList = d3v4.select('#namelist');
+    var authors = authorList
+        .selectAll('p')
+        .data(graph.links)
+        .enter().append('p')
+        .text(d.name)
+        .on('click', function(d){updateInfo(d)});
 
     var simulation = d3v4.forceSimulation()
         .force('link', d3v4.forceLink()
@@ -262,18 +268,6 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         }
     }
     
-    function addNameToList(d){
-        var authorList = d3v4.select('#namelist');
-        
-        var authors = authorList
-            .selectAll('p')
-            .data(graph.links)
-            .enter().append('p')
-            .text(d.name)
-            .on('click', function(d){updateInfo(d)});
-            
-    }
-
     function updateInfo(d){
         var authorInfo = d3v4.select('#moreinfo');
         

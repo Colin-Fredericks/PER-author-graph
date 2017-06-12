@@ -121,7 +121,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         .append('input')
             .attr('type', 'text')
             .attr('name', 'authorFilter')
-            .attr('value', 'Filter')
+            .attr('value', 'filter list')
         .on('input', function(){
             filterList(this.value);
         });

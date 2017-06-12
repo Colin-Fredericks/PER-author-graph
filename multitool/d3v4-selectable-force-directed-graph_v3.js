@@ -177,18 +177,14 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
     }
 
     rect.on('click', () => {
-
-        //Deselecting turns heavy links off.
-        d3.selectAll('.link')
-          .style('stroke',function(d) {
-             return d.previouslySelected.source === node || d.previouslySelected.target === node ? 'red' : '#999';
-           })
-
+        
+        console.log('deselected by clicking on rect');
         node.each(function(d) {
             d.selected = false;
             d.previouslySelected = false;
         });
         node.classed('selected', false);
+        link.classed('selected', false);
 
     });
 
@@ -306,12 +302,12 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
             // Update the info box for this author
             updateInfo(d);
 
-            // Selecting turns heavy links on.
-            d3.selectAll('.link > line')
+            // Selecting styles links.
+            d3.selectAll('.link line')
               .filter(function(d) {
                  return (d.source === node) || (d.target === node);
                })
-              .style('stroke', 'red')
+              .classed('selected', true);
         }
 
         d3v4.select(this).classed('selected', function(p) { d.previouslySelected = d.selected; return d.selected = true; });

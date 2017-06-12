@@ -138,7 +138,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
                 .classed('hidden', true);
             // Get the part of the author list whose name contains the filter text
             // Show those authors
-            allAuthors.filter(function(d, filterText){
+            allAuthors.filter(function(d){
                 return d.name.toLowerCase().includes(filterText.toLowerCase());
             }).classed('hidden', false);
         }

@@ -127,10 +127,22 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
     
     function filterList(filterText){
         console.log(filterText);
-//         If the input is blank, show all authors and be done.
-//         Hide every author
-//         Get the part of the author list whose name contains the filter text
-//         Show those authors
+
+        // If the input is blank, show all authors and be done.
+        if(filterText === ''){
+            d3v4.selectAll('.authorname')
+                .classed('hidden', false);
+        }else{
+            // Hide every author
+            var allAuthors = d3v4.selectAll('.authorname')
+                .classed('hidden', true);
+            // Get the part of the author list whose name contains the filter text
+            // Show those authors
+            allAuthors.filter(function(d, filterText){
+                return d.name.toLowerCase().includes(filterText.toLowerCase());
+            }).classed('hidden', false);
+        }
+
     }
 
     // Add author names to list
@@ -138,6 +150,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         .selectAll('p')
         .data(graph.nodes)
         .enter().append('p')
+        .classed('authorname', true)
         .text(function(d){ return d.name })
         .on('click', function(d){ updateInfo(d) });
 

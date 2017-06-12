@@ -182,6 +182,12 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
             d.previouslySelected = false;
         });
         node.classed("selected", false);
+
+        //Deselecting turns heavy links off.
+        d3.selectAll(".link")
+          .style("stroke",function(d) {
+             return d.source === node || d.target === node ? "red" : "#999";
+           })
     });
 
     function brushed() {
@@ -296,7 +302,13 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
             console.log(d);
                         
             updateInfo(d);
-                
+
+            // Selecting turns heavy links on.
+            d3.selectAll(".link")
+              .filter(function(d) {
+                 return (d.source === node) || (d.target === node);
+               })
+              .style("stroke", "red")
         }
 
         d3v4.select(this).classed("selected", function(p) { d.previouslySelected = d.selected; return d.selected = true; });

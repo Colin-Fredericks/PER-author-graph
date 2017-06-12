@@ -7,7 +7,8 @@ body {
 }
 
 #namelist p {
-    margin: 3px 0px 3px 6px;
+    padding: 3px 0px 3px 6px;
+    border: 1px solid gray;
 }
 
 #d3_selectable_force_directed_graph svg {

@@ -113,13 +113,13 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         });
         
     // Add author names to list
-//     var authorList = d3v4.select('#namelist');
-//     var authors = authorList
-//         .selectAll('p')
-//         .data(graph.nodes)
-//         .enter().append('p')
-//         .text(function(d){ return d.name })
-//         .on('click', function(d){ updateInfo(d) });
+    var authorList = d3v4.select('#namelist');
+    var authors = authorList
+        .selectAll('p')
+        .data(graph.nodes)
+        .enter().append('p')
+        .text(function(d){ return d.name })
+        .on('click', function(d){ updateInfo(d) });
 
 
 

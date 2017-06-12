@@ -126,7 +126,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         });
     
     function filterList(filterText){
-        console.log(this.value);
+        console.log(filterText);
 //         If the input is blank, show all authors and be done.
 //         Hide every author
 //         Get the part of the author list whose name contains the filter text

@@ -113,7 +113,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         });
         
     // Add author names to list
-    node.each(function(d){ addNameToList(d) });
+    addNameToList(d);
 
     var simulation = d3v4.forceSimulation()
         .force('link', d3v4.forceLink()

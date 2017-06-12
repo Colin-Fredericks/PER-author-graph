@@ -112,16 +112,34 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
                 return d.id;
         });
         
-    // Add author names to list
     var authorList = d3v4.select('#namelist');
+
+    // Add author filter
+    var authorFilter = authorList
+        .append('form')
+            .attr('id', 'filterForm')
+        .append('input')
+            .attr('type', 'text')
+            .attr('name', 'authorFilter')
+        .on('input', function(){
+            filterList(this.value);
+        });
+    
+    function filterList(filterText){
+        console.log(this.value);
+//         If the input is blank, show all authors and be done.
+//         Hide every author
+//         Get the part of the author list whose name contains the filter text
+//         Show those authors
+    }
+
+    // Add author names to list
     var authors = authorList
         .selectAll('p')
         .data(graph.nodes)
         .enter().append('p')
         .text(function(d){ return d.name })
         .on('click', function(d){ updateInfo(d) });
-
-
 
     var simulation = d3v4.forceSimulation()
         .force('link', d3v4.forceLink()

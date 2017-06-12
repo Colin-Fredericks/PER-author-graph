@@ -33,6 +33,14 @@ body {
   font-weight: bold;
 }
 
+.hidden {
+    display: none;
+}
+
+.shown {
+    display: unset;
+}
+
 .node .selected {
   stroke: black;
 }

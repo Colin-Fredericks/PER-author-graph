@@ -350,6 +350,12 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         })
 
     }
+    
+    function panToNode(d, author){
+    	// This is a placeholder function that I will eventually expand
+    	// to let selecting an author make the whole graph pan to center that author.
+    	// I should copy some stuff from the drag functionality.
+    }
 
     function dragged(d) {
       //d.fx = d3v4.event.x;
@@ -371,18 +377,6 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
             d.fy = null;
         })
     }
-
-    var texts = ['Use the scroll wheel to zoom',
-                 'Hold the shift key to select nodes']
-
-    svg.selectAll('text')
-        .data(texts)
-        .enter()
-        .append('text')
-        .attr('x', 920)
-        .attr('y', function(d,i) { return 570 + i * 18; })
-        .style('background-color', 'white')
-        .text(function(d) { return d; });
 
     return graph;
 };

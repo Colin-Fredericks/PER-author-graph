@@ -6,6 +6,29 @@ body {
     float:left;
 }
 
+#title {
+    border: 1px solid gray;
+    width:100%;
+    position:relative;
+}
+
+#title h1 {
+	float:left;
+	margin: 4px;
+}
+
+#instructions {
+    border: 1px solid gray;
+    float: right;
+	position:absolute;
+    bottom:0;
+    right:0;
+}
+
+#instructions p {
+	margin: 2px;
+}
+
 #namelist p {
     padding: 3px 0px 3px 6px;
     border: 1px solid gray;

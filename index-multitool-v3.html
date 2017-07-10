@@ -6,20 +6,23 @@
 <body>
 
 <div id="title">
-	<h1>PER Authors</h1>
+	<h1>PER Author Graph</h1>
 	<div id="instructions">
 		<p>Drag to pan. Scroll to zoom. Click to select.</p>
 	</div>
 	<br clear="all"/>
 </div>
 
-<div id="namelist" style="width: 240px; height: 480px; overflow-y: scroll;">
-    <h3>Author List</h3>
+<div id="midbox">
+	<div id="namelist" style="width: 240px; height: 480px; overflow-y: scroll;" class="dontwrap">
+		<h3>Author List</h3>
+	</div>
+	<div id="d3_selectable_force_directed_graph" style="width: 960px; height: 480px; margin-bottom: 12px;" class="dontwrap">
+		<svg />
+	</div>
+	<br clear="all"/>
 </div>
-<div id="d3_selectable_force_directed_graph" style="width: 960px; height: 480px; margin-bottom: 12px">
-    <svg />
-</div>
-<br clear="all"/>
+
 <div id="databox">
 	<div id="moreinfo">
 		<h3>Author Information</h3>

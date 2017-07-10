@@ -320,6 +320,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
             authorInfo.append('p')
             .html('<strong>Publications:</strong> ' + d.publications);
         }
+        
     }
 
     function dragstarted(d) {
@@ -332,7 +333,10 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
             
             // Update the info box for this author
             updateInfo(d);
-
+            
+            // If they're not in the current view, scroll them into the center.
+            if( isInView(d) ){ panToNode(d); }
+            
             // Selecting styles links.
             console.log('set style for connected links')
             link.filter(function(d) {
@@ -347,14 +351,23 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         .each(function(d) { //d.fixed |= 2;
           d.fx = d.x;
           d.fy = d.y;
-        })
+        });
 
     }
     
-    function panToNode(d, author){
+    function panToNode(d){
     	// This is a placeholder function that I will eventually expand
     	// to let selecting an author make the whole graph pan to center that author.
     	// I should copy some stuff from the drag functionality.
+    	
+    	console.log('pan ' + d.name + ' to center');
+    }
+    
+    function isInView(d){
+    	// Another placeholder function - checks to see if a particular author is 
+    	// inside the current view window. For now, just fake it.
+    	
+    	return false;
     }
 
     function dragged(d) {

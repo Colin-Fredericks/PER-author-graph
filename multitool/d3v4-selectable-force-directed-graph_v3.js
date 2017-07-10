@@ -339,9 +339,10 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
             
             // Selecting styles links.
             console.log('set style for links connected to ' + d.name);
-            link.filter(function(d) {
-            	console.log(d.name);
-				return (this.source === d.name) || (this.target === d.name);
+            var tempName = d.name;
+            link.filter(function(d, tempName) {
+            	console.log(d);
+				return (this.source === tempName) || (this.target === tempName);
                })
               .classed('selected', true);
         }

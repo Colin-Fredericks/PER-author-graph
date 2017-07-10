@@ -368,6 +368,8 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
     	console.log('pan ' + d.name + ' to center');
     	
     	var tempID = d.id;
+    	
+    	// Currently this is selecting... the whole box? Not sure. Come back and fix this.
     	tempNode = node.filter(function(d, tempName) {return d.id === tempID;});
     	console.log(tempNode);
     	

@@ -367,12 +367,15 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
     	
     	console.log('pan ' + d.name + ' to center');
     	
+    	var tempID = d.id;
+    	tempNode = node.filter(function(d, tempName) {return d.id === tempID;});
+    	
     	// Temporarily putting this node in the center just to test.
     	var tempWidth = +svg.attr('width')
     	var tempHeight = +svg.attr('height')
     	console.log('width: ' + tempWidth + ', height: ' + tempHeight);
-    	d.x = tempWidth / 2;
-    	d.y = tempHeight / 2;
+    	tempNode.x = tempWidth / 2;
+    	tempNode.y = tempHeight / 2;
     }
     
     function isInView(d){

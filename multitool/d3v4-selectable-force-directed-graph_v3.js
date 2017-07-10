@@ -338,11 +338,11 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
             if( !isInView(d) ){ panToNode(d); }
             
             // Selecting styles links.
-            console.log('set style for links connected to ' + d.name);
-            var tempName = d.name;
+            console.log('set style for links connected to ' + d.name + ', number ' + d.id);
+            var tempID = d.id;
             link.filter(function(d, tempName) {
             	console.log(d);
-				return (this.source === tempName) || (this.target === tempName);
+				return (d.source.id === tempID) || (d.target.id === tempID);
                })
               .classed('selected', true);
         }

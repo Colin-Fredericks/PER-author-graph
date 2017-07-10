@@ -371,8 +371,8 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
     	var tempWidth = +svg.attr('width')
     	var tempHeight = +svg.attr('height')
     	console.log('width: ' + tempWidth + ', height: ' + tempHeight);
-    	d.x = width / 2;
-    	d.y = height / 2;
+    	d.x = tempWidth / 2;
+    	d.y = tempHeight / 2;
     }
     
     function isInView(d){

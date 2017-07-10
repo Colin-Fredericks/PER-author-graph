@@ -340,8 +340,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
             // Selecting styles links.
             console.log('set style for links connected to ' + d.name);
             link.filter(function(d) {
-            	console.log(this);
-				return (d.source === node) || (d.target === node);
+				return (this.source === d.name) || (this.target === d.name);
                })
               .classed('selected', true, function(d){
               	console.log('setting selected class for link to ' + node);

@@ -338,7 +338,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
             if( !isInView(d) ){ panToNode(d); }
             
             // Selecting styles links.
-            console.log('set style for connected links')
+            console.log('set style for links connected to ' + node)
             link.filter(function(d) {
                  return (d.source === node) || (d.target === node);
                })

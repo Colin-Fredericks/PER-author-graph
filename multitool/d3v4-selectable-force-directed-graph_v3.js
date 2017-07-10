@@ -368,8 +368,8 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
     	console.log('pan ' + d.name + ' to center');
     	
     	// Temporarily putting this node in the center just to test.
-    	d.x = width / 2;
-    	d.y = height / 2;
+    	d.fx = width / 2;
+    	d.fy = height / 2;
     }
     
     function isInView(d){

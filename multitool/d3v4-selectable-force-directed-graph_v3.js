@@ -369,6 +369,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
     	
     	var tempID = d.id;
     	tempNode = node.filter(function(d, tempName) {return d.id === tempID;});
+    	console.log(tempNode);
     	
     	// Temporarily putting this node in the center just to test.
     	var tempWidth = +svg.attr('width')

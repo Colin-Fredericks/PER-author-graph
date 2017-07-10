@@ -335,14 +335,16 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
             updateInfo(d);
             
             // If they're not in the current view, scroll them into the center.
-            if( isInView(d) ){ panToNode(d); }
+            if( !isInView(d) ){ panToNode(d); }
             
             // Selecting styles links.
             console.log('set style for connected links')
             link.filter(function(d) {
                  return (d.source === node) || (d.target === node);
                })
-              .classed('selected', true);
+              .classed('selected', true, function(d){
+              	console.log('setting selected class for link to ' node);
+              });
         }
 
         d3v4.select(this).classed('selected', function(p) { d.previouslySelected = d.selected; return d.selected = true; });

@@ -337,11 +337,14 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
             // If they're not in the current view, scroll them into the center.
             if( !isInView(d) ){ panToNode(d); }
             
-            // Selecting styles links.
+            // Deselect all the links.
+            link.classed('selected', false);
+            
+            // Select the ones that match.
             console.log('set style for links connected to ' + d.name + ', number ' + d.id);
             var tempID = d.id;
+            
             link.filter(function(d, tempName) {
-            	console.log(d);
 				return (d.source.id === tempID) || (d.target.id === tempID);
                })
               .classed('selected', true);

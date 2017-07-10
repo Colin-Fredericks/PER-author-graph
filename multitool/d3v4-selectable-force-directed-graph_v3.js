@@ -343,7 +343,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
                  return (d.source === node) || (d.target === node);
                })
               .classed('selected', true, function(d){
-              	console.log('setting selected class for link to ' node);
+              	console.log('setting selected class for link to ' + node);
               });
         }
 

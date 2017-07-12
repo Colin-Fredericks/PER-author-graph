@@ -368,7 +368,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
     	
     	// Currently this is selecting... the whole box? Not sure. Come back and fix this.
     	tempNode = node.filter(function(d, tempName) {return d.id === author.id;});
-    	console.log(tempNode);
+    	console.log(tempNode[0]);
     	
     	// Temporarily putting this node in the center just to test.
     	var tempWidth = +svg.attr('width')

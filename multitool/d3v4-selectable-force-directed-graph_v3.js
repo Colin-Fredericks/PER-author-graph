@@ -366,8 +366,8 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
     	
     	var tempWidth = +svg.attr('width');
     	var tempHeight = +svg.attr('height');
-    	var xOffset = (tempWidth / 2) - prevX;
-    	var yOffset = (tempHeight / 2) - prevY;
+    	var xOffset = (tempWidth / 2) - author.x;
+    	var yOffset = (tempHeight / 2) - author.y;
 
     	console.log('pan ' + author.name + ' to center');
     	
@@ -385,6 +385,15 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
     	// inside the current view window. For now, just fake it.
     	
     	return false;
+    	
+//     	if( d.x =< 0 || d.x >= +svg.attr('width')){
+// 	    	return false;
+// 	    }
+//     	if( d.y =< 0 || d.y >= +svg.attr('height')){
+// 	    	return false;
+// 	    }
+// 	    return true;
+	    
     }
 
     function dragged(d) {

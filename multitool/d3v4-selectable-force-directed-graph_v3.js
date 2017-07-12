@@ -305,34 +305,33 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         }
     }
     
-    function updateInfo(d){
+    function updateInfo(author){
         var authorInfo = d3v4.select('#moreinfo');
         
         // Clear existing author info
         authorInfo.selectAll('p').remove();
         
         // Add whatever info we have
-        if('name' in d){
+        if('name' in author){
             authorInfo.append('p')
-            .html('<strong>Author:</strong> ' + d.name);
+            .html('<strong>Author:</strong> ' + author.name);
         }
-        if('publications' in d){
+        if('publications' in author){
             authorInfo.append('p')
-            .html('<strong>Publications:</strong> ' + d.publications);
+            .html('<strong>Publications:</strong> ' + author.publications);
         }
         
 		// If they're not in the current view, scroll them into the center.
-		if( !isInView(d) ){ panToNode(d); }
+		if( !isInView(author) ){ panToNode(author); }
 		
 		// Deselect all the links.
 		link.classed('selected', false);
 		
 		// Select the ones that match.
-		console.log('set style for links connected to ' + d.name + ', number ' + d.id);
-		var tempID = d.id;
+		console.log('set style for links connected to ' + author.name + ', number ' + author.id);
 		
-		link.filter(function(d, tempName) {
-			return (d.source.id === tempID) || (d.target.id === tempID);
+		link.filter(function(d) {
+			return (d.source.id === author.id) || (d.target.id === author.id);
 		   })
 		  .classed('selected', true);
     }

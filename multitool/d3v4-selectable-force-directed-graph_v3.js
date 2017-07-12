@@ -366,36 +366,18 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
     	
     	var tempWidth = +svg.attr('width');
     	var tempHeight = +svg.attr('height');
-    	var prevX = 0;
-    	var prevY = 0;
-    	var xOffset = 0;
-    	var yOffset = 0;
+    	var xOffset = (tempWidth / 2) - prevX;
+    	var yOffset = (tempHeight / 2) - prevY;
 
     	console.log('pan ' + author.name + ' to center');
     	
-    	// Select just the current author and get the distance between them and the center.
-    	node.filter(function(d) {return d.id === author.id;})
-    		.each(function(d){
-    			prevX = d.x;
-    			prevY = d.y;
-
-    			console.log('Previous location: x=' + prevX + ', y=' + prevY);
-
-		    	// Put this node in the center and get the distance we moved it.
-//     			d.x = tempWidth / 2;
-//     			d.y = tempHeight / 2;
-    			
-    			xOffset = (tempWidth / 2) - prevX;
-    			yOffset = (tempHeight / 2) - prevY;
-    		});
-		
 		console.log('offset: x=' + xOffset + ', y=' + yOffset);
 		
 		// Move every node by the same distance we move the current author.
-//     	node.each(function(d){
-//     		d.x = d.x + xOffset;
-//     		d.y = d.y + yOffset;
-//     	});
+    	node.each(function(d){
+    		d.x = d.x + xOffset;
+    		d.y = d.y + yOffset;
+    	});
     }
     
     function isInView(d){

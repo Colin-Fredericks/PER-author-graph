@@ -366,6 +366,8 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
     	
     	var tempWidth = +svg.attr('width');
     	var tempHeight = +svg.attr('height');
+    	var prevX = 0;
+    	var prevY = 0;
     	var xOffset = 0;
     	var yOffset = 0;
 
@@ -374,17 +376,17 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
     	// Want to select just the current author, though we'll need to move every node later.
     	node.filter(function(d) {return d.id === author.id;})
     		.each(function(d){
-    			console.log('Previous location: x=' + d.x + ', y=' + d.y);
+    			prevX = d.x;
+    			prevY = d.y;
 
-    			xOffset = d.x;
-    			yOffset = d.y;
+    			console.log('Previous location: x=' + prevX + ', y=' + prevY);
 
-		    	// Temporarily putting this node in the center just to test.
+		    	// Put this node in the center and get the distance we moved it.
     			d.x = tempWidth / 2;
     			d.y = tempHeight / 2;
     			
-    			xOffset -= d.x;
-    			yOffset -= d.y;
+    			xOffset = d.x - prevX;
+    			yOffset = d.y - prevY;
     		});
 
 //     	node.each(function(d){

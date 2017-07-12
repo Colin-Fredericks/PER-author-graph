@@ -389,6 +389,8 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
     			yOffset = (tempHeight / 2) - prevY;
     		});
 		
+		console.log('offset: x=' + xOffset + ', y=' + yOffset);
+		
 		// Move every node by the same distance we move the current author.
     	node.each(function(d){
     		d.x += xOffset;

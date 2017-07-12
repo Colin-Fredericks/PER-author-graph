@@ -373,7 +373,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
 
     	console.log('pan ' + author.name + ' to center');
     	
-    	// Want to select just the current author, though we'll need to move every node later.
+    	// Select just the current author and get the distance between them and the center.
     	node.filter(function(d) {return d.id === author.id;})
     		.each(function(d){
     			prevX = d.x;
@@ -382,17 +382,18 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
     			console.log('Previous location: x=' + prevX + ', y=' + prevY);
 
 		    	// Put this node in the center and get the distance we moved it.
-    			d.x = tempWidth / 2;
-    			d.y = tempHeight / 2;
+//     			d.x = tempWidth / 2;
+//     			d.y = tempHeight / 2;
     			
-    			xOffset = d.x - prevX;
-    			yOffset = d.y - prevY;
+    			xOffset = (tempWidth / 2) - prevX;
+    			yOffset = (tempHeight / 2) - prevY;
     		});
-
-//     	node.each(function(d){
-//     		d.x += xOffset;
-//     		d.y += yOffset;
-//     	});
+		
+		// Move every node by the same distance we move the current author.
+    	node.each(function(d){
+    		d.x += xOffset;
+    		d.y += yOffset;
+    	});
     	
     	console.log('width: ' + tempWidth / 2 + ', height: ' + tempHeight);
     }

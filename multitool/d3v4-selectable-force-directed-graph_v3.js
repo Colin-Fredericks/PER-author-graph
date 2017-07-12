@@ -364,19 +364,33 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
     	// to let selecting an author make the whole graph pan to center that author.
     	// I should copy some stuff from the drag functionality.
     	
-    	var tempWidth = +svg.attr('width')
-    	var tempHeight = +svg.attr('height')
+    	var tempWidth = +svg.attr('width');
+    	var tempHeight = +svg.attr('height');
+    	var xOffset = 0;
+    	var yOffset = 0;
 
     	console.log('pan ' + author.name + ' to center');
     	
     	// Want to select just the current author, though we'll need to move every node later.
     	node.filter(function(d) {return d.id === author.id;})
     		.each(function(d){
-    			console.log(d);
+    			console.log('Previous location: x=' + d.x + ', y=' + d.y);
+
+    			xOffset = d.x;
+    			yOffset = d.y;
+
 		    	// Temporarily putting this node in the center just to test.
     			d.x = tempWidth / 2;
     			d.y = tempHeight / 2;
+    			
+    			xOffset -= d.x;
+    			yOffset -= d.y;
     		});
+
+//     	node.each(function(d){
+//     		d.x += xOffset;
+//     		d.y += yOffset;
+//     	});
     	
     	console.log('width: ' + tempWidth / 2 + ', height: ' + tempHeight);
     }

@@ -30,7 +30,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
 
     var zoom = d3v4.zoom()
     .on('zoom', zoomed)
-    var other_zoom = d3v4.behavior.zoom().scaleExtent([min_zoom,max_zoom])
+    var other_zoom = d3v4.zoom().scaleExtent([min_zoom,max_zoom])
 
     gMain.call(zoom);
 

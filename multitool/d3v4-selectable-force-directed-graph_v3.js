@@ -31,10 +31,6 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
     var zoom = d3v4.zoom()
     .on('zoom', zoomed)
     
-    var min_zoom = 0.01;
-	var max_zoom = 10;
-    var other_zoom = d3v4.zoom().scaleExtent([min_zoom,max_zoom])
-
     gMain.call(zoom);
 
 
@@ -372,16 +368,15 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
     	
 		console.log('offset: x=' + xOffset + ', y=' + yOffset);
 		
-		var dcx = (tempWidth/2 - author.x * other_zoom.scale());
-		var dcy = (tempHeight/2 - author.y * other_zoom.scale());
-		other_zoom.translate([dcx,dcy]);
-		
+		simulation.force.stop();
 		
 		// Move every node by the distance from the current author to the center.
-//     	node.each(function(d){
-//     		d.fx = d.x + xOffset;
-//     		d.fy = d.y + yOffset;
-//     	});
+    	node.each(function(d){
+    		d.fx = d.x + xOffset;
+    		d.fy = d.y + yOffset;
+    	});
+    	
+    	simulation.force.start();
     }
     
     function isInView(d){

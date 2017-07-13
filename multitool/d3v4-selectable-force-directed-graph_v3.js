@@ -368,23 +368,28 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
     	
 		console.log('offset: x=' + xOffset + ', y=' + yOffset);
 		
+		var dcx = (tempWidth/2 - author.x * zoom.scale());
+		var dcy = (tempHeight/2 - author.y * zoom.scale());
+		zoom.translate([dcx,dcy]);
+		
+		
 		// Move every node by the distance from the current author to the center.
-    	node.each(function(d){
-    		d.fx = d.x + xOffset;
-    		d.fy = d.y + yOffset;
-    	});
+//     	node.each(function(d){
+//     		d.fx = d.x + xOffset;
+//     		d.fy = d.y + yOffset;
+//     	});
     }
     
     function isInView(d){
     	// Another placeholder function - checks to see if a particular author is 
-    	// inside the current view window. For now, just fake it.
+    	// inside the current view window (less than 10 pixels from the edge).
     	
     	return false;
     	
-//     	if( d.x =< 0 || d.x >= +svg.attr('width')){
+//     	if( d.x =< 10 || d.x >= +svg.attr('width') - 10 ){
 // 	    	return false;
 // 	    }
-//     	if( d.y =< 0 || d.y >= +svg.attr('height')){
+//     	if( d.y =< 10 || d.y >= +svg.attr('height') - 10 ){
 // 	    	return false;
 // 	    }
 // 	    return true;

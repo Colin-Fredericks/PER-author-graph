@@ -152,14 +152,8 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
     // Add author names to list
     var authors = authorList
         .selectAll('p')
-        .data(graph.nodes);
-    
-    authors.sort(function(d){
-        	return d3.ascending(d.name);
-    });
-
-    
-    authors.enter().append('p')
+        .data(graph.nodes)
+        .enter().append('p')
         .classed('authorname', true)
         .text(function(d){ return d.name })
         .on('click', function(d){ updateInfo(d) });

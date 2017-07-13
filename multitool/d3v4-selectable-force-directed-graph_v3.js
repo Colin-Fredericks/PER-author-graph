@@ -377,7 +377,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
     	node.each(function(d){
     		d.x = d.x + xOffset;
     		d.y = d.y + yOffset;
-    	}).data( function(d){ return [{x: d.x + xOffset, y: d.y + yOffset}] } );
+    	}).data( function(d){ return [{'x': d.x + xOffset, 'y': d.y + yOffset}] } );
     }
     
     function isInView(d){

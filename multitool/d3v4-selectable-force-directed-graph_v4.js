@@ -369,8 +369,8 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         });
 
         console.log('moving author to: x=' + Number(author.x + xOffset) + ', y=' + Number(author.y + yOffset));
-        author.fx = tempWidth;
-        author.fy = tempHeight;
+        author.fx = tempWidth/2;
+        author.fy = tempHeight/2;
 
         ticked();
 

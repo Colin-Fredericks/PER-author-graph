@@ -1,17 +1,14 @@
+// Uses d3 version 4
+
 function createV4SelectableForceDirectedGraph(svg, graph) {
-    // if both d3v3 and d3v4 are loaded, we'll assume
-    // that d3v4 is called d3v4, otherwise we'll assume
-    // that d3v4 is the default (d3)
-    if (typeof d3v4 == 'undefined')
-        d3v4 = d3;
 
     var width = +svg.attr('width'),
         height = +svg.attr('height');
 
-    let parentWidth = d3v4.select('svg').node().parentNode.clientWidth;
-    let parentHeight = d3v4.select('svg').node().parentNode.clientHeight;
+    let parentWidth = d3.select('svg').node().parentNode.clientWidth;
+    let parentHeight = d3.select('svg').node().parentNode.clientHeight;
 
-    var svg = d3v4.select('svg')
+    var svg = d3.select('svg')
     .attr('width', parentWidth)
     .attr('height', parentHeight)
 
@@ -28,17 +25,17 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
 
     var gDraw = gMain.append('g');
 
-    var zoom = d3v4.zoom()
+    var zoom = d3.zoom()
     .on('zoom', zoomed)
     
     gMain.call(zoom);
 
 
     function zoomed() {
-        gDraw.attr('transform', d3v4.event.transform);
+        gDraw.attr('transform', d3.event.transform);
     }
 
-    var color = d3v4.scaleOrdinal(d3v4.schemeCategory10);
+    var color = d3.scaleOrdinal(d3.schemeCategory10);
 
     if (! ('links' in graph)) {
         console.log('Graph is missing links');
@@ -80,7 +77,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
             else
                 return color(d.group);
         })
-        .call(d3v4.drag()
+        .call(d3.drag()
           .on('start', dragstarted)
           .on('drag', dragged)
           .on('end', dragended));
@@ -91,7 +88,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
           return Math.max(Math.sqrt(d.publications) * 3.5, 10);
         })
         .attr('fill','black')
-        .call(d3v4.drag()
+        .call(d3.drag()
           .on('start', dragstarted)
           .on('drag', dragged)
           .on('end', dragended));
@@ -112,7 +109,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
                 return d.id;
         });
         
-    var authorList = d3v4.select('#namelist');
+    var authorList = d3.select('#namelist');
 
     // Add author filter
     var authorFilter = authorList
@@ -134,11 +131,11 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
 
         // If the input is blank, show all authors and be done.
         if(filterText === ''){
-            d3v4.selectAll('.authorname')
+            d3.selectAll('.authorname')
                 .classed('hidden', false);
         }else{
             // Hide every author
-            var allAuthors = d3v4.selectAll('.authorname')
+            var allAuthors = d3.selectAll('.authorname')
                 .classed('hidden', true);
             // Get the part of the author list whose name contains the filter text
             // Show those authors
@@ -158,20 +155,20 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         .text(function(d){ return d.name })
         .on('click', function(d){ updateInfo(d) });
 
-    var simulation = d3v4.forceSimulation()
-        .force('link', d3v4.forceLink()
+    var simulation = d3.forceSimulation()
+        .force('link', d3.forceLink()
                 .id(function(d) { return d.id; })
                 .strength(.7)
                 .distance(function(d) {
                     return 100;
                 })
         )
-        .force('charge', d3v4.forceManyBody()
+        .force('charge', d3.forceManyBody()
             .strength(-200)
         )
-        .force('center', d3v4.forceCenter(parentWidth / 2, parentHeight / 2))
-        .force('x', d3v4.forceX(parentWidth/2))
-        .force('y', d3v4.forceY(parentHeight/2));
+        .force('center', d3.forceCenter(parentWidth / 2, parentHeight / 2))
+        .force('x', d3.forceX(parentWidth/2))
+        .force('y', d3.forceY(parentHeight/2));
 
     simulation
         .nodes(graph.nodes)
@@ -197,7 +194,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
     var brushMode = false;
     var brushing = false;
 
-    var brush = d3v4.brush()
+    var brush = d3.brush()
         .on('start', brushstarted)
         .on('brush', brushed)
         .on('end', brushended);
@@ -225,10 +222,10 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
     });
 
     function brushed() {
-        if (!d3v4.event.sourceEvent) return;
-        if (!d3v4.event.selection) return;
+        if (!d3.event.sourceEvent) return;
+        if (!d3.event.selection) return;
 
-        var extent = d3v4.event.selection;
+        var extent = d3.event.selection;
         
         var shouldSelect = d.selected = d.previouslySelected ^
             (extent[0][0] <= d.x && d.x < extent[1][0]
@@ -238,7 +235,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         console.log('selecting from 2');
         
         if(shouldSelect){
-            var authorInfo = d3v4.select('#moreinfo');
+            var authorInfo = d3.select('#moreinfo');
             console.log(authorInfo);
             authorInfo.append('p')
                 .text('testing');
@@ -246,8 +243,8 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
     }
 
     function brushended() {
-        if (!d3v4.event.sourceEvent) return;
-        if (!d3v4.event.selection) return;
+        if (!d3.event.sourceEvent) return;
+        if (!d3.event.selection) return;
         if (!gBrush) return;
 
         gBrush.call(brush.move, null);
@@ -261,13 +258,13 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         brushing = false;
     }
 
-    d3v4.select('body').on('keydown', keydown);
-    d3v4.select('body').on('keyup', keyup);
+    d3.select('body').on('keydown', keydown);
+    d3.select('body').on('keyup', keyup);
 
     var shiftKey;
 
     function keydown() {
-        shiftKey = d3v4.event.shiftKey;
+        shiftKey = d3.event.shiftKey;
 
         if (shiftKey) {
             // if we already have a brush, don't do anything
@@ -299,7 +296,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
     }
     
     function updateInfo(author){
-        var authorInfo = d3v4.select('#moreinfo');
+        var authorInfo = d3.select('#moreinfo');
         
         // Clear existing author info
         authorInfo.selectAll('p').remove();
@@ -328,7 +325,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
     }
 
     function dragstarted(d) {
-      if (!d3v4.event.active) simulation.alphaTarget(0.9).restart();
+      if (!d3.event.active) simulation.alphaTarget(0.9).restart();
 
         if (!d.selected && !shiftKey) {
             // if this node isn't selected, then we have to unselect every other node
@@ -340,7 +337,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
             
         }
 
-        d3v4.select(this).classed('selected', function(p) { d.previouslySelected = d.selected; return d.selected = true; });
+        d3.select(this).classed('selected', function(p) { d.previouslySelected = d.selected; return d.selected = true; });
 
         node.filter(function(d) { return d.selected; })
 			.each(function(d) { //d.fixed |= 2;
@@ -378,12 +375,6 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
 		})
 		ticked();
 
-//    		node.each(function(d) {
-// 				console.log(d)
-// 				d.fx = null;
-// 				d.fy = null;
-//         })
-
     }
     
     function isInView(d){
@@ -405,13 +396,13 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
     function dragged(d) {
 		node.filter(function(d) { return d.selected; })
 			.each(function(d) {
-			d.fx += d3v4.event.dx;
-			d.fy += d3v4.event.dy;
+			d.fx += d3.event.dx;
+			d.fy += d3.event.dy;
 		})
     }
 
     function dragended(d) {
-		if (!d3v4.event.active) simulation.alphaTarget(0);
+		if (!d3.event.active) simulation.alphaTarget(0);
 		d.fx = null;
 		d.fy = null;
 		node.filter(function(d) { return d.selected; })

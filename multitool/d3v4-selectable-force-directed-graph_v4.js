@@ -354,10 +354,6 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
 
     }
     
-    function translate(d) {
-		return "translate(" + (d % x) * z + "," + Math.floor(d / x) * z + ")";
-	}
-    
     function panToNode(author){
     	// This is a placeholder function that I will eventually expand
     	// to let selecting an author make the whole graph pan to center that author.
@@ -376,8 +372,8 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
 		
 		node.each(function(d) {
 				console.log('Before: id: ' + d.id + ' x: ' + d.x + ', y: ' + d.y);
-				d3v4.select(this).attr("transform", translate);
-				d3v4.select(this).transition.attr('transform', 'translate(' + xOffset + ',' + yOffset + ')');
+				d.x += xOffset;
+				d.y += yOffset;
 				console.log('After: id: ' + d.id + ' x: ' + d.x + ', y: ' + d.y);
             })
 //    		node.each(function(d) {

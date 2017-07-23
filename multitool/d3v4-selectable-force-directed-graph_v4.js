@@ -360,6 +360,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
     	console.log('pan ' + author.name + ' to center');
     	
 		console.log('offset: x=' + xOffset + ', y=' + yOffset);
+		console.log('moving author to: x=' + author.x + xOffset + ', y=' + author.y + yOffset)
 		
 		// Move every node by the distance from the current author to the center.
 		
@@ -368,12 +369,12 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
 			d.fy = d.y + yOffset;
 		});
 		
-		ticked();
-		node.each(function(d) {
-			d.fx = null;
-			d.fy = null;
-		})
-		ticked();
+// 		ticked();
+// 		node.each(function(d) {
+// 			d.fx = null;
+// 			d.fy = null;
+// 		})
+// 		ticked();
 
     }
     

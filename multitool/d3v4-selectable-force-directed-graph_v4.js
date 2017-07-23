@@ -372,11 +372,13 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
 		
 		node.filter(function(d) { return d.selected; })
 			.each(function(d) {
+				console.log(d)
 				d.fx += xOffset;
 				d.fy += yOffset;
             })
    		node.filter(function(d) { return d.selected; })
 			.each(function(d) {
+				console.log(d)
 				d.fx = null;
 				d.fy = null;
         })

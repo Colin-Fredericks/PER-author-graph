@@ -311,17 +311,17 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
             .html('<strong>Publications:</strong> ' + author.publications);
         }
         
-		// If they're not in the current view, scroll them into the center.
-		if( !isInView(author) ){ panToNode(author); }
-		
-		// Deselect all the links.
-		link.classed('selected', false);
-		
-		// Select the ones that match and set their style.
-		link.filter(function(d) {
-			return (d.source.id === author.id) || (d.target.id === author.id);
-		   })
-		  .classed('selected', true);
+        // If they're not in the current view, scroll them into the center.
+        if( !isInView(author) ){ panToNode(author); }
+        
+        // Deselect all the links.
+        link.classed('selected', false);
+        
+        // Select the ones that match and set their style.
+        link.filter(function(d) {
+            return (d.source.id === author.id) || (d.target.id === author.id);
+           })
+          .classed('selected', true);
     }
 
     function dragstarted(d) {
@@ -340,74 +340,74 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         d3.select(this).classed('selected', function(p) { d.previouslySelected = d.selected; return d.selected = true; });
 
         node.filter(function(d) { return d.selected; })
-			.each(function(d) { //d.fixed |= 2;
-				d.fx = d.x;
-				d.fy = d.y;
-		});
+            .each(function(d) { //d.fixed |= 2;
+                d.fx = d.x;
+                d.fy = d.y;
+        });
 
     }
     
     function panToNode(author){
-    	// This is a placeholder function that I will eventually expand
-    	// to let selecting an author make the whole graph pan to center that author.
-    	// I should copy some stuff from the drag functionality.
-    	
-    	var tempWidth = +svg.attr('width');
-    	var tempHeight = +svg.attr('height');
-    	var xOffset = (tempWidth / 2) - author.x;
-    	var yOffset = (tempHeight / 2) - author.y;
+        // This is a placeholder function that I will eventually expand
+        // to let selecting an author make the whole graph pan to center that author.
+        // I should copy some stuff from the drag functionality.
+        
+        var tempWidth = +svg.attr('width');
+        var tempHeight = +svg.attr('height');
+        var xOffset = (tempWidth / 2) - author.x;
+        var yOffset = (tempHeight / 2) - author.y;
 
-    	console.log('pan ' + author.name + ' to center');
-    	console.log(tempWidth, tempHeight);
-    	
-		console.log('offset: x=' + xOffset + ', y=' + yOffset);
-		console.log('moving author to: x=' + author.x + xOffset + ', y=' + author.y + yOffset);
-		
-		// Move every node by the distance from the current author to the center.
-		
-		node.each(function(d) {
-			d.fx = d.x + xOffset;
-			d.fy = d.y + yOffset;
-		});
-		
-// 		ticked();
-// 		node.each(function(d) {
-// 			d.fx = null;
-// 			d.fy = null;
-// 		})
-// 		ticked();
+        console.log('pan ' + author.name + ' to center');
+        console.log(tempWidth, tempHeight);
+        
+        console.log('offset: x=' + xOffset + ', y=' + yOffset);
+        console.log('moving author to: x=' + author.x + xOffset + ', y=' + author.y + yOffset);
+        
+        // Move every node by the distance from the current author to the center.
+        
+        node.each(function(d) {
+            d.fx = d.x + xOffset;
+            d.fy = d.y + yOffset;
+        });
+        
+//         ticked();
+//         node.each(function(d) {
+//             d.fx = null;
+//             d.fy = null;
+//         })
+//         ticked();
 
     }
     
     function isInView(d){
-    	// Another placeholder function - checks to see if a particular author is 
-    	// inside the current view window (less than 10 pixels from the edge).
-    	
-    	return false;
-    	
-//     	if( d.x =< 10 || d.x >= +svg.attr('width') - 10 ){
-// 	    	return false;
-// 	    }
-//     	if( d.y =< 10 || d.y >= +svg.attr('height') - 10 ){
-// 	    	return false;
-// 	    }
-// 	    return true;
-	    
+        // Another placeholder function - checks to see if a particular author is 
+        // inside the current view window (less than 10 pixels from the edge).
+        
+        return false;
+        
+//         if( d.x =< 10 || d.x >= +svg.attr('width') - 10 ){
+//             return false;
+//         }
+//         if( d.y =< 10 || d.y >= +svg.attr('height') - 10 ){
+//             return false;
+//         }
+//         return true;
+        
     }
 
     function dragged(d) {
-		node.filter(function(d) { return d.selected; })
-			.each(function(d) {
-			d.fx += d3.event.dx;
-			d.fy += d3.event.dy;
-		})
+        node.filter(function(d) { return d.selected; })
+            .each(function(d) {
+            d.fx += d3.event.dx;
+            d.fy += d3.event.dy;
+        })
     }
 
     function dragended(d) {
-		if (!d3.event.active) simulation.alphaTarget(0);
-		d.fx = null;
-		d.fy = null;
-		node.filter(function(d) { return d.selected; })
+        if (!d3.event.active) simulation.alphaTarget(0);
+        d.fx = null;
+        d.fy = null;
+        node.filter(function(d) { return d.selected; })
         .each(function(d) {
             d.fx = null;
             d.fy = null;

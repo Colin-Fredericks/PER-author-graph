@@ -339,11 +339,11 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
 
         d3.select(this).classed('selected', function(p) { d.previouslySelected = d.selected; return d.selected = true; });
 
-//         node.filter(function(d) { return d.selected; })
-//             .each(function(d) {
-//                 d.fx = d.x;
-//                 d.fy = d.y;
-//         });
+        node.filter(function(d) { return d.selected; })
+            .each(function(d) {
+                d.fx = d.x;
+                d.fy = d.y;
+        });
 
     }
     
@@ -368,13 +368,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
             d.fx = d.x + xOffset;
             d.fy = d.y + yOffset;
         });
-        
-//         ticked();
-//         node.each(function(d) {
-//             d.fx = null;
-//             d.fy = null;
-//         })
-//         ticked();
+        ticked();
 
     }
     

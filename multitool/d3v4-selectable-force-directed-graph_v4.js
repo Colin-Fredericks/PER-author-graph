@@ -372,7 +372,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
 		
 		node.each(function(d) {
 				console.log('Before: id: ' + d.id + ' x: ' + d.x + ', y: ' + d.y);
-				d.transition.attr('transform', 'translate(' + xOffset + ',' + yOffset + ')');
+				d3v4.select(this).transition.attr('transform', 'translate(' + xOffset + ',' + yOffset + ')');
 				console.log('After: id: ' + d.id + ' x: ' + d.x + ', y: ' + d.y);
             })
 //    		node.each(function(d) {

@@ -354,8 +354,8 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         
         var tempWidth = +svg.attr('width');
         var tempHeight = +svg.attr('height');
-        var xOffset = (tempWidth / 2) - author.x;
-        var yOffset = (tempHeight / 2) - author.y;
+        var xOffset = (tempWidth / 2) - Number(author.x);
+        var yOffset = (tempHeight / 2) - Number(author.y);
 
         console.log('pan ' + author.name + ' to center');
         

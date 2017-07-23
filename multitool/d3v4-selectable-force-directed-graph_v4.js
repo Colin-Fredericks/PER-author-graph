@@ -369,6 +369,18 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
             d.fy = d.y + yOffset;
             d.y = d.y + yOffset;
         });
+        
+        // Do I need to fix the links too?
+		link.filter(function(d) {
+            return (d.source.id === author.id) || (d.target.id === author.id);
+        })
+        .each(function(d){
+            d.x1 = d.x1 + xOffset;
+            d.x2 = d.x2 + xOffset;
+            d.y1 = d.y1 + yOffset;
+            d.y2 = d.y2 + yOffset;
+        });
+
 
         console.log('moving author to: x=' + Number(author.x + xOffset) + ', y=' + Number(author.y + yOffset));
         author.fx = tempWidth/2;

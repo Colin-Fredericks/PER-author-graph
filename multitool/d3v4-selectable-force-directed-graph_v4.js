@@ -173,8 +173,6 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         .force('x', d3v4.forceX(parentWidth/2))
         .force('y', d3v4.forceY(parentHeight/2));
 
-    console.log('Force: -200, max distance: infinity, distance: 100, strength: .7');
-
     simulation
         .nodes(graph.nodes)
         .on('tick', ticked);
@@ -322,9 +320,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
 		// Deselect all the links.
 		link.classed('selected', false);
 		
-		// Select the ones that match.
-		console.log('set style for links connected to ' + author.name + ', number ' + author.id);
-		
+		// Select the ones that match and set their style.
 		link.filter(function(d) {
 			return (d.source.id === author.id) || (d.target.id === author.id);
 		   })
@@ -347,10 +343,10 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         d3v4.select(this).classed('selected', function(p) { d.previouslySelected = d.selected; return d.selected = true; });
 
         node.filter(function(d) { return d.selected; })
-        .each(function(d) { //d.fixed |= 2;
-          d.fx = d.x;
-          d.fy = d.y;
-        });
+			.each(function(d) { //d.fixed |= 2;
+				d.fx = d.x;
+				d.fy = d.y;
+		});
 
     }
     
@@ -374,8 +370,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
 			d.fx = d.x + xOffset;
 			d.fy = d.y + yOffset;
 		});
-		ticked();
-		ticked();
+		
 		ticked();
 		node.each(function(d) {
 			d.fx = null;
@@ -408,13 +403,11 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
     }
 
     function dragged(d) {
-      //d.fx = d3v4.event.x;
-      //d.fy = d3v4.event.y;
-            node.filter(function(d) { return d.selected; })
-            .each(function(d) {
-                d.fx += d3v4.event.dx;
-                d.fy += d3v4.event.dy;
-            })
+		node.filter(function(d) { return d.selected; })
+			.each(function(d) {
+			d.fx += d3v4.event.dx;
+			d.fy += d3v4.event.dy;
+		})
     }
 
     function dragended(d) {
@@ -422,7 +415,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
 		d.fx = null;
 		d.fy = null;
 		node.filter(function(d) { return d.selected; })
-        .each(function(d) { //d.fixed &= ~6;
+        .each(function(d) {
             d.fx = null;
             d.fy = null;
         })

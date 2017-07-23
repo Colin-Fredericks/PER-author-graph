@@ -361,33 +361,15 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         
         console.log('offset: x=' + xOffset + ', y=' + yOffset);
         
+        simulation.stop();
         // Move every node by the distance from the current author to the center.
-        // Make sure the author ends up in the center.
         node.each(function(d) {
             d.fx = d.x + xOffset;
             d.x = d.x + xOffset;
             d.fy = d.y + yOffset;
             d.y = d.y + yOffset;
         });
-        
-        // Do I need to fix the links too?
-		link.filter(function(d) {
-            return (d.source.id === author.id) || (d.target.id === author.id);
-        })
-        .each(function(d){
-            d.x1 = d.x1 + xOffset;
-            d.x2 = d.x2 + xOffset;
-            d.y1 = d.y1 + yOffset;
-            d.y2 = d.y2 + yOffset;
-        });
-
-
-        console.log('moving author to: x=' + Number(author.x + xOffset) + ', y=' + Number(author.y + yOffset));
-        author.fx = tempWidth/2;
-        author.x = tempWidth/2;
-        author.fy = tempHeight/2;
-        author.y = tempHeight/2;
-
+		simulation.restart();
         ticked();
 
     }

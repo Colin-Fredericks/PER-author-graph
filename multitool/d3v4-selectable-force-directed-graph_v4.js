@@ -365,12 +365,16 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         // Make sure the author ends up in the center.
         node.each(function(d) {
             d.fx = d.x + xOffset;
+            d.x = d.x + xOffset;
             d.fy = d.y + yOffset;
+            d.y = d.y + yOffset;
         });
 
         console.log('moving author to: x=' + Number(author.x + xOffset) + ', y=' + Number(author.y + yOffset));
         author.fx = tempWidth/2;
+        author.x = tempWidth/2;
         author.fy = tempHeight/2;
+        author.y = tempHeight/2;
 
         ticked();
 

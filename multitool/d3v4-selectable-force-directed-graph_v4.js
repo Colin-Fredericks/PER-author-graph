@@ -370,12 +370,12 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
 		
 		// Move every node by the distance from the current author to the center.
 		
-        node.each(function(d) {
-				console.log('Before: id: ' + d.id + ' x: ' + d.x + ', y: ' + d.y);
-				d.x += xOffset;
-				d.y += yOffset;
-				console.log('After: id: ' + d.id + ' x: ' + d.x + ', y: ' + d.y);
-            });
+		node.each(function(d) {
+			console.log('Before: id: ' + d.id + ' x: ' + d.x + ', y: ' + d.y);
+			d.fx += xOffset;
+			d.fy += yOffset;
+			console.log('After: id: ' + d.id + ' x: ' + d.x + ', y: ' + d.y);
+		});
 		ticked();
         
 //    		node.each(function(d) {

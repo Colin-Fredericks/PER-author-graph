@@ -369,11 +369,18 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
 		console.log('offset: x=' + xOffset + ', y=' + yOffset);
 		
 		// Move every node by the distance from the current author to the center.
-		node.each(function(d){ console.log(d) });
-//     	node.each(function(d){
-//     		d.fx = d.x + xOffset;
-//     		d.fy = d.y + yOffset;
-//     	});
+		
+		node.filter(function(d) { return d.selected; })
+			.each(function(d) {
+				d.fx += xOffset;
+				d.fy += yOffset;
+            })
+   		node.filter(function(d) { return d.selected; })
+			.each(function(d) {
+				d.fx = null;
+				d.fy = null;
+        })
+
     }
     
     function isInView(d){
@@ -403,10 +410,10 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
     }
 
     function dragended(d) {
-      if (!d3v4.event.active) simulation.alphaTarget(0);
-      d.fx = null;
-      d.fy = null;
-        node.filter(function(d) { return d.selected; })
+		if (!d3v4.event.active) simulation.alphaTarget(0);
+		d.fx = null;
+		d.fy = null;
+		node.filter(function(d) { return d.selected; })
         .each(function(d) { //d.fixed &= ~6;
             d.fx = null;
             d.fy = null;

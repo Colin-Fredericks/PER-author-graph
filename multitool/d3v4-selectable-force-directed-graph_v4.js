@@ -351,6 +351,12 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         console.log('offset: x=' + xOffset + ', y=' + yOffset);
         
         // Put code to move viewpoint (or move all nodes) here.
+        node.each(function(d){
+            console.log('id: ' + d.id + ' x: ' + d.x + ' y: ' + d.y);
+            d.fx = d.x + xOffset;
+            d.fy = d.y + yOffset;
+            console.log('id: ' + d.id + ' x: ' + d.x + ' y: ' + d.y);
+        });
         
         
     }

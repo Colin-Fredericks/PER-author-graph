@@ -330,11 +330,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         if (!d.selected && !shiftKey) {
             // if this node isn't selected, then we have to unselect every other node
             node.classed('selected', function(p) { return p.selected =  p.previouslySelected = false; });
-            console.log(d);
-            
-            // Update the info box for this author
-            updateInfo(d);
-            
+            console.log(d);            
         }
 
         d3.select(this).classed('selected', function(p) { d.previouslySelected = d.selected; return d.selected = true; });
@@ -343,6 +339,8 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
             .each(function(d) {
                 d.fx = d.x;
                 d.fy = d.y;
+				// Update the info box for this author
+				updateInfo(d);
         });
 
     }

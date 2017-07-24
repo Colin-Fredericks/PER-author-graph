@@ -218,9 +218,6 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         });
         node.classed('selected', false);
         link.classed('selected', false);
-        
-        // Picking up for when it stops on pan.
-        simulation.restart();
 
     });
 
@@ -359,18 +356,10 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         var yOffset = (tempHeight / 2) - Number(author.y);
 
         console.log('pan ' + author.name + ' to center');
-        
         console.log('offset: x=' + xOffset + ', y=' + yOffset);
         
-        simulation.stop();
-        // Move every node by the distance from the current author to the center.
-        node.each(function(d) {
-            d.fx = d.x + xOffset;
-            d.x = d.x + xOffset;
-            d.fy = d.y + yOffset;
-            d.y = d.y + yOffset;
-        });
-
+        // Put code to move viewpoint (or move all nodes) here.
+        
     }
     
     function isInView(d){

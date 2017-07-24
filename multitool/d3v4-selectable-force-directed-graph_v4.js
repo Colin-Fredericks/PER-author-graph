@@ -367,7 +367,6 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
             d.fy = d.y + yOffset;
             d.y = d.y + yOffset;
         });
-        simulation.restart();
 
     }
     

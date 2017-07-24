@@ -67,7 +67,11 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         .selectAll('circle')
         .data(graph.nodes)
         .enter()
-        .append('g');
+        .append('g')
+        .call(d3.drag()
+          .on('start', dragstarted)
+          .on('drag', dragged)
+          .on('end', dragended));
 
     var node = nodeGroup.append('circle')
         .attr('r', function(d) { return Math.sqrt(d.publications) * 4; })
@@ -76,11 +80,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
                 return d.color;
             else
                 return color(d.group);
-        })
-        .call(d3.drag()
-          .on('start', dragstarted)
-          .on('drag', dragged)
-          .on('end', dragended));
+        });
 
     var nodeText = nodeGroup.append('text')
         .text(function(d){ return d.initials; })

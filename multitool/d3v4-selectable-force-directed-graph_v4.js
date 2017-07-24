@@ -87,11 +87,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         .attr('font-size', function(d){
           return Math.max(Math.sqrt(d.publications) * 3.5, 10);
         })
-        .attr('fill','black')
-        .call(d3.drag()
-          .on('start', dragstarted)
-          .on('drag', dragged)
-          .on('end', dragended));
+        .attr('fill','black');
 
     // add titles for mouseover blurbs
     node.append('title')
@@ -127,7 +123,6 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         });
     
     function filterList(filterText){
-        console.log(filterText);
 
         // If the input is blank, show all authors and be done.
         if(filterText === ''){
@@ -232,7 +227,6 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
              && extent[0][1] <= d.y && d.y < extent[1][1]);
 
         node.classed('selected', shouldSelect);
-        console.log('selecting from 2');
         
         if(shouldSelect){
             var authorInfo = d3.select('#moreinfo');
@@ -367,10 +361,10 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         
         return false;
         
-//         if( d.x =< 10 || d.x >= +svg.attr('width') - 10 ){
+//         if( d.x =< 10 || d.x >= width - 10 ){
 //             return false;
 //         }
-//         if( d.y =< 10 || d.y >= +svg.attr('height') - 10 ){
+//         if( d.y =< 10 || d.y >= height - 10 ){
 //             return false;
 //         }
 //         return true;

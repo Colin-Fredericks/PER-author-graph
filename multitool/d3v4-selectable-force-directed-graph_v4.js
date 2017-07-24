@@ -199,7 +199,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         // don't remove the brush on keyup in the middle of a selection
         brushing = true;
 
-        node.each(function(d) {
+        nodeGroup.each(function(d) {
             d.previouslySelected = shiftKey && d.selected;
         });
     }
@@ -207,11 +207,11 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
     rect.on('click', () => {
         
         console.log('deselected by clicking on rect');
-        node.each(function(d) {
+        nodeGroup.each(function(d) {
             d.selected = false;
             d.previouslySelected = false;
         });
-        node.classed('selected', false);
+        nodeGroup.classed('selected', false);
         link.classed('selected', false);
 
     });
@@ -226,7 +226,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
             (extent[0][0] <= d.x && d.x < extent[1][0]
              && extent[0][1] <= d.y && d.y < extent[1][1]);
 
-        node.classed('selected', shouldSelect);
+        nodeGroup.classed('selected', shouldSelect);
         
         if(shouldSelect){
             var authorInfo = d3.select('#moreinfo');

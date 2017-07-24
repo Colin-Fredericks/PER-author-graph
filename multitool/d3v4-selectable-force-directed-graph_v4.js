@@ -350,17 +350,8 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         console.log('pan ' + author.name + ' to center');
         console.log('offset: x=' + xOffset + ', y=' + yOffset);
         
-        // Put code to move viewpoint (or move all nodes) here.
-        node.each(function(d){
-            console.log('id: ' + d.id + ' x: ' + d.x + ' y: ' + d.y);
-            d.fx = d.x;
-            d.fy = d.y;
-            d.x = d.x + xOffset;
-            d.y = d.y + yOffset;
-            d.fx = d.x;
-            d.fy = d.y;
-            console.log('id: ' + d.id + ' x: ' + d.x + ' y: ' + d.y);
-        });
+        // Moving the nodes causes strange and inexplicable behavior.
+        // I need to move the viewport.
         
         
     }

@@ -355,6 +355,8 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
             console.log('id: ' + d.id + ' x: ' + d.x + ' y: ' + d.y);
             d.fx = d.x + xOffset;
             d.fy = d.y + yOffset;
+            d.fx = null
+            d.fy = null
             console.log('id: ' + d.id + ' x: ' + d.x + ' y: ' + d.y);
         });
         

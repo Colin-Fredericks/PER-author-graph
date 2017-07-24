@@ -218,6 +218,9 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         });
         node.classed('selected', false);
         link.classed('selected', false);
+        
+        // Picking up for when it stops on pan.
+        simulation.restart();
 
     });
 

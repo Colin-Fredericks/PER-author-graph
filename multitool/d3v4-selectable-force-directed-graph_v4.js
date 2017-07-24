@@ -323,7 +323,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
 
         if (!d.selected && !shiftKey) {
             // if this node isn't selected, then we have to unselect every other node
-            node.classed('selected', function(p) { return p.selected =  p.previouslySelected = false; });
+            nodeGroup.classed('selected', function(p) { return p.selected =  p.previouslySelected = false; });
             console.log(d);            
         }
 

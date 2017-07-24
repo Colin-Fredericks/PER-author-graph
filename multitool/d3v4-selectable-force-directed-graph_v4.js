@@ -350,15 +350,14 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         // to let selecting an author make the whole graph pan to center that author.
         // I should copy some stuff from the drag functionality.
         
-        var tempWidth = +svg.attr('width');
-        var tempHeight = +svg.attr('height');
-        var xOffset = (tempWidth / 2) - Number(author.x);
-        var yOffset = (tempHeight / 2) - Number(author.y);
+        var xOffset = (width / 2) - Number(author.x);
+        var yOffset = (height / 2) - Number(author.y);
 
         console.log('pan ' + author.name + ' to center');
         console.log('offset: x=' + xOffset + ', y=' + yOffset);
         
         // Put code to move viewpoint (or move all nodes) here.
+        
         
     }
     

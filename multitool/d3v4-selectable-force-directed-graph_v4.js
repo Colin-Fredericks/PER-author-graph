@@ -26,7 +26,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
     var gDraw = gMain.append('g');
 
     var zoom = d3.zoom()
-    .on('zoom', zoomed)
+    .on('zoom', zoomed);
     
     gMain.call(zoom);
 
@@ -352,7 +352,10 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         
         // Moving the nodes causes strange and inexplicable behavior.
         // I need to move the viewport.
+        d3.select('.nodes').attr('transform', 'translate('+xOffset+','+yOffset+')');
         
+        //Another maybe:
+        //simulation.force('center', d3.forceCenter(parentWidth / 2 + xOffset, parentHeight / 2 + yOffset))
         
     }
     

@@ -363,7 +363,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
 //         d3.selectAll('text').attr('transform', 'translate('+(-Number(author.x)+width/2)+','+(-Number(author.y)+height/2)+')');
         
         //Another maybe:
-       simulation.force('center', d3.forceCenter(xOffset + author.x, yOffset + author.y));
+       simulation.force('center', d3.forceCenter(2*xOffset + author.x, 2*yOffset + author.y));
         
     }
     

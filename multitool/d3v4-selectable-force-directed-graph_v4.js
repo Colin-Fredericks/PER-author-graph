@@ -355,6 +355,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         // I need to move the viewport.
 
 // I can't seem to move the author to the actual center.
+        console.log('delta x: '+(-Number(author.x)+width/2)+', delta y: '+(-Number(author.y+height/2)))
         d3.selectAll('circle').attr('transform', 'translate('+(-Number(author.x)+width/2)+','+(-Number(author.y+height/2))+')');
         d3.selectAll('line').attr('transform', 'translate('+(-Number(author.x)+width/2)+','+(-Number(author.y)+height/2)+')');
         d3.selectAll('text').attr('transform', 'translate('+(-Number(author.x)+width/2)+','+(-Number(author.y)+height/2)+')');

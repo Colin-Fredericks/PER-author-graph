@@ -351,6 +351,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         var yOffset = (height / 2) - Number(author.y);
         console.log(width, height);
         console.log('pan ' + author.name + ' to center');
+        console.log('location: x=' + author.x + ', y=' + author.y);
         console.log('offset: x=' + xOffset + ', y=' + yOffset);
         
         // Moving the nodes causes strange and inexplicable behavior.
@@ -362,7 +363,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
 //         d3.selectAll('text').attr('transform', 'translate('+(-Number(author.x)+width/2)+','+(-Number(author.y)+height/2)+')');
         
         //Another maybe:
-        simulation.force('center', d3.forceCenter(width/2, height/2));
+        simulation.force('center', d3.forceCenter(author.x, author.y));
         
     }
     

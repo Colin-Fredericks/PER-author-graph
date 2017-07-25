@@ -349,10 +349,10 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
             height = +svg.attr('height');
         var xOffset = (width / 2) - Number(author.x);
         var yOffset = (height / 2) - Number(author.y);
-        console.log(width, height);
+
         console.log('pan ' + author.name + ' to center');
         console.log('location: x=' + author.x + ', y=' + author.y);
-        console.log('offset: x=' + xOffset + ', y=' + yOffset);
+        console.log('distance from center: x=' + xOffset + ', y=' + yOffset);
         
         // Moving the nodes causes strange and inexplicable behavior.
         // I need to move the viewport.
@@ -363,7 +363,7 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
 //         d3.selectAll('text').attr('transform', 'translate('+(-Number(author.x)+width/2)+','+(-Number(author.y)+height/2)+')');
         
         //Another maybe:
-        simulation.force('center', d3.forceCenter(author.x, author.y));
+//        simulation.force('center', d3.forceCenter(author.x, author.y));
         
     }
     

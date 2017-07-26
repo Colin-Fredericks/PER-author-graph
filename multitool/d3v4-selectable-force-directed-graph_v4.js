@@ -355,10 +355,10 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         
         // Another possibility: move force center, update positions.
         simulation.force('center', d3.forceCenter(2*xOffset + author.x, 2*yOffset + author.y));
-//         node.each(function(d){
-//             d.x += xOffset;
-//             d.y += yOffset;
-//         });
+        node.each(function(d){
+            d.fx += xOffset;
+            d.fy += yOffset;
+        });
         console.log('new location: x=' + author.x + ', y=' + author.y);
         simulation.restart();
         

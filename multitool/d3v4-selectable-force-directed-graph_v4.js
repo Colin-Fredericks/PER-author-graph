@@ -2,9 +2,6 @@
 
 function createV4SelectableForceDirectedGraph(svg, graph) {
 
-    var width = +svg.attr('width'),
-        height = +svg.attr('height');
-
     let parentWidth = d3.select('svg').node().parentNode.clientWidth;
     let parentHeight = d3.select('svg').node().parentNode.clientHeight;
 

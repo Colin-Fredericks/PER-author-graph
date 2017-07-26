@@ -355,17 +355,15 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         console.log('distance from center: x=' + xOffset + ', y=' + yOffset);
         
         // Moving the nodes causes strange and inexplicable behavior.
-        // I need to move the viewport.
-
-        // I can't seem to move the author to the actual center. I have no idea why changing these numbers doesn't do much.
-//         d3.selectAll('circle').attr('transform', 'translate('+(-Number(author.x)+width/2)+','+(-Number(author.y+height/2))+')');
-//         d3.selectAll('line').attr('transform', 'translate('+(-Number(author.x)+width/2)+','+(-Number(author.y)+height/2)+')');
-//         d3.selectAll('text').attr('transform', 'translate('+(-Number(author.x)+width/2)+','+(-Number(author.y)+height/2)+')');
         
-        //Another maybe:
-       simulation.force('center', d3.forceCenter(2*xOffset + author.x, 2*yOffset + author.y));
-       console.log('new location: x=' + author.x + ', y=' + author.y);
-       simulation.restart();
+        // Another possibility: move force center, update positions.
+        simulation.force('center', d3.forceCenter(2*xOffset + author.x, 2*yOffset + author.y));
+        node.each(function(d){
+            d.x += xOffset;
+            x.y += yOffset;
+        });
+        console.log('new location: x=' + author.x + ', y=' + author.y);
+        simulation.restart();
         
     }
     

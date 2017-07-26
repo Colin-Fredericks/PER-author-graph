@@ -352,10 +352,9 @@ function createV4SelectableForceDirectedGraph(svg, graph) {
         console.log('distance from center: x=' + xOffset + ', y=' + yOffset);
         
         // Moving the nodes causes strange and inexplicable behavior.
-        
-        // Another possibility: move force center, update positions.
-        simulation.force('center', d3.forceCenter(2*xOffset + author.x, 2*yOffset + author.y));
-        simulation.restart( function(){console.log('new location: x=' + author.x + ', y=' + author.y);} );
+        // Moving the force center is not great because it does it
+        // with respect to the original coordinates, not the current view.
+        // How can I move the viewport?
         
     }
     

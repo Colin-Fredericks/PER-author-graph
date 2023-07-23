@@ -1,0 +1,104 @@
+body {
+    font: 13px sans-serif;
+}
+
+#d3_selectable_force_directed_graph {
+    float:left;
+}
+
+#title {
+    border: 1px solid gray;
+    width:100%;
+    position:relative;
+}
+
+
+#midbox {
+	width: 2000px;
+}
+
+#title h1 {
+	float:left;
+	margin: 4px;
+}
+
+#instructions {
+    border: 1px solid gray;
+    float: right;
+	position:absolute;
+    bottom:0;
+    right:0;
+}
+
+#instructions p {
+	margin: 2px;
+}
+
+#namelist p {
+    padding: 3px 0px 3px 6px;
+    border: 1px solid gray;
+    margin: 0px;
+}
+
+#d3_selectable_force_directed_graph svg {
+    border: 1px solid;
+    font: 13px sans-serif;
+    text-anchor: end;
+}
+
+#d3_selectable_force_directed_graph .node {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+#d3_selectable_force_directed_graph text {
+  stroke-width: 0px;
+  text-shadow:
+    -1px -1px 0 #FFF,
+    1px -1px 0 #FFF,
+    -1px 1px 0 #FFF,
+    1px 1px 0 #FFF;
+  font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+.shown {
+    display: unset;
+}
+
+.node .selected {
+  stroke: black;
+}
+
+.link {
+  stroke: #999;
+  stroke-opacity: 0.6;
+  stroke-width: 1px;
+}
+
+.link .selected {
+  stroke: black;
+  stroke-opacity: 1;
+  stroke-width: 2px;
+}
+
+#namelist {
+    width: 200px;
+    border: 1px solid black;
+    float: left;
+}
+
+#moreinfo {
+    border: 1px solid black;
+}
+
+form input {
+    background-color: #def;
+    width: 150px;
+    font-size: 13px;
+    padding: 2px;
+    margin: 4px;
+}

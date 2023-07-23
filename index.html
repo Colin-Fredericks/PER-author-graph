@@ -18,7 +18,6 @@
 </head>
 
 <body>
-<p>Test 1</p>
 <svg width="960" height="600"></svg>
 </body>
 
@@ -60,6 +59,7 @@ d3.json("data/author_data_oct13.json", function(error, graph) {
     .enter().append("circle")
       .attr("r", function(d) { return Math.sqrt(d.publications) * 4; })
       .attr("fill", function(d) { return color(d.group); })
+      .on("click", clicked)
       .call(d3.drag()
           .on("start", dragstarted)
           .on("drag", dragged)
@@ -68,14 +68,16 @@ d3.json("data/author_data_oct13.json", function(error, graph) {
   node.append("title")
       .text(function(d) { return d.name; });
 
+/*  Needs to be inside a group rather than inside the circle.
   node.append("text")
       .text(function(d){ 
         var names = d.name.split(" ");
         var initials = "";
         for(var j = 0; j < names.length; j++){
-            initials += names[i][0];
+            initials += names[j][0];
         }
         return initials});
+*/
 
   simulation
       .nodes(graph.nodes)
@@ -128,6 +130,12 @@ function dragended(d) {
   if (!d3.event.active) simulation.alphaTarget(0);
   d.fx = null;
   d.fy = null;
+}
+
+function clicked(d, i) {
+  if (d3.event.defaultPrevented) return; // dragged
+
+  simulation.force("center", d3.forceCenter(width - d3.event.x, height - d3.event.y));
 }
 
 </script>
